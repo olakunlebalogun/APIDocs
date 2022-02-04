@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+.section {
+  background-color: #e9f7ff;
+  color: #791b33;
+  width: 30%;
+  height: auto;
+  margin: 20px auto;
+  border-radius: 5px;
+  padding: 20px;
+  font-family: "Lato", sans-serif;
+}
+.header {
+  color: #011b33;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+p {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+fa-icon {
+  margin-right: 10px;
+}
+
+h4 {
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 24px;
+}
