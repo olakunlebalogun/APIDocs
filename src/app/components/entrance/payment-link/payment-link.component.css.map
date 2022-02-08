@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "payment-link.component.scss"
+    ],
+    "names": [],
+    "file": "payment-link.component.css"
+}

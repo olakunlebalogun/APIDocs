@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "payment-send-otp.component.scss"
+    ],
+    "names": [],
+    "file": "payment-send-otp.component.css"
+}

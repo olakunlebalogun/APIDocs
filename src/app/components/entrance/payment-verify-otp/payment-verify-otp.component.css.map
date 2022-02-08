@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "payment-verify-otp.component.scss"
+    ],
+    "names": [],
+    "file": "payment-verify-otp.component.css"
+}

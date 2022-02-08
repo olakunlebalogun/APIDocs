@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "transaction-pin-change.component.scss"
+    ],
+    "names": [],
+    "file": "transaction-pin-change.component.css"
+}
