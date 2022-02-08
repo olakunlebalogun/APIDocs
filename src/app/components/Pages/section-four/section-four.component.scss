@@ -1,0 +1,44 @@
+.container {
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: 1px solid red;
+
+  background-color: white;
+  padding: 20px;
+}
+
+.section-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-two {
+  position: relative;
+  width: 80%;
+  max-width: 100%;
+  border-radius: 6px;
+  margin-top: 8px;
+  overflow: auto;
+  background-color: rgb(15, 15, 16);
+  height: 200px;
+}
+.section-two pre {
+  font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  color: white;
+  padding: 0 1rem 1rem;
+  margin: 0;
+}
+
+.section-three {
+  background-color: blue;
+}
+
+.left-input {
+  color: black;
+}
+
+.right-input {
+  color: black;
+}
