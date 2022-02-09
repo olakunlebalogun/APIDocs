@@ -7,11 +7,11 @@ import { IndexComponent } from './components/Pages/index/index.component';
 import { SectionOneComponent } from './components/Pages/section-one/section-one.component';
 import { SectionTwoComponent } from './components/Pages/section-two/section-two.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-<<<<<<< HEAD
+
 import { SectionThreeComponent } from './components/Pages/section-three/section-three.component';
 import { SectionFourComponent } from './components/Pages/section-four/section-four.component';
 import { SectionFiveComponent } from './components/Pages/section-five/section-five.component';
-=======
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HomeComponent } from './components/home/home.component';
@@ -80,7 +80,6 @@ import { VerifyComponent } from './components/Transaction/verify/verify.componen
 import { VerifyOtpComponent } from './components/Transaction/verify-otp/verify-otp.component';
 import { PasswordMobileResetComponent } from './components/entrance/password-mobile-reset/password-mobile-reset.component';
 import { DashboardOneComponent } from './components/merchant/dashboard-one/dashboard-one.component';
->>>>>>> origin/lanre_dev
 
 @NgModule({
   declarations: [
@@ -90,11 +89,11 @@ import { DashboardOneComponent } from './components/merchant/dashboard-one/dashb
     DashboardOneComponent,
     SectionOneComponent,
     SectionTwoComponent,
-<<<<<<< HEAD
+
     SectionThreeComponent,
     SectionFourComponent,
     SectionFiveComponent,
-=======
+
     SidebarComponent,
     HomeComponent,
     HeaderComponent,
@@ -155,11 +154,21 @@ import { DashboardOneComponent } from './components/merchant/dashboard-one/dashb
     VerifyComponent,
     VerifyOtpComponent,
     PasswordMobileResetComponent,
->>>>>>> origin/lanre_dev
   ],
-  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, BrowserAnimationsModule, MatToolbarModule, MatMenuModule, MatIconModule, MatDividerModule, MatListModule, MatSidenavModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FontAwesomeModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatMenuModule,
+    MatIconModule,
+    MatDividerModule,
+    MatListModule,
+    MatSidenavModule,
+  ],
 
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
