@@ -37,20 +37,21 @@
     <div class="right">
       <h6>Show response</h6>
       <label class="switch">
-        <input type="checkbox">
+        <input type="checkbox" [checked]="check" (change)="changed($event)">
         <span class="slider"></span>
       </label>
     </div>
   </div>
   <div class="section-two">
     <pre>
-
+{{code}}
     </pre>
   </div>
 
-  <div class="section-three">
+  <div *ngIf="check" class="section-three">
     <pre>
-
+{{response}}
     </pre>
   </div>
 </div>
+
