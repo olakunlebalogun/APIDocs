@@ -1,0 +1,363 @@
+<mat-nav-list>
+    <div class="logo">
+        <img src="assets/logo-black.png" alt="Swipe-logo">
+    </div>
+    <a mat-list-item routerLink="/home" routerLinkActive="list-item-active">
+        Home
+    </a>
+
+    <a mat-list-item routerLink="/entrance" (click)="toggle()"> Entrance
+    </a>
+
+
+    <ul class="submenu">
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/authentication-password">
+                Update auth password
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/authentication-pin">
+                Update auth pin
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/Merchant-photo">
+                Merchant photo
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/onboard">
+                Onboard
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/pass-changes">
+                Pass changes
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/password-reset">
+                Password reset
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/password-reset-complete">
+                Password reset complete
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/password-mobile-reset">
+                Password mobile reset
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/pay-merchant">
+                Pay-merchant
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/pay-merchant-verify">
+                Pay-merchant verify
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/payment-charge-retrieve">
+                Payment charge retrieve
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/payment-charge-retrieve-pororation">
+                Payment charge pororation
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/payment-initiate">
+                Payment initiate
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/payment-installment">
+                Payment installment
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/payment-link">
+                Payment link
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/payment-otp-send">
+                Payment otp send
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/payment-retrieve">
+                Payment retrieve
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/payment-verify">
+                Payment verify
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/payment-verify-otp">
+                Payment verify otp
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/preview-photo">
+                Preview photo
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/secret-question">
+                Secret question
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/sign-in">
+                Sign in
+            </a>
+        </li>
+
+        <li *ngIf="show">
+            <a mat-list-item routerLink="/validate-cac">
+                Validate cac
+            </a>
+        </li>
+
+    </ul>
+
+    <a mat-list-item routerLink="/file-uploader" (click)="toggle_1()">
+        File Uploader
+    </a>
+
+    <ul class="submenu">
+        <li *ngIf="show_1">
+            <a mat-list-item routerLink="/file-download">
+                File download
+            </a>
+        </li>
+        <li *ngIf="show_1">
+            <a mat-list-item routerLink="/upload-file">
+                Upload file
+            </a>
+        </li>
+    </ul>
+
+    <a mat-list-item routerLink="/merchant" (click)="toggle_2()">
+        Merchant
+    </a>
+
+    <ul class="submenu">
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/add-update-compliance">
+                Add update compliance
+            </a>
+        </li>
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/add-update-payout">
+                Add update payout
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/add-transaction-pin">
+                Add transaction pin
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/authentication-update-password">
+                Auth update password
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/authentication-update-pin">
+                Auth update pin
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/bank-add">
+                Bank add
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/list-bank">
+                List bank
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/banks">
+                Banks
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/bvn-check">
+                Bvn check
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/bvn-verify">
+                Bvn verify
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/change-password">
+                Change password
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/dashboard">
+                Dashboard
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/delete-compliance">
+                Delete compliance
+            </a>
+        </li>
+
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/delete-payout">
+                Delete payout
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/get-compliance">
+                Get compliance
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/get-payout">
+                Get payout
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/preview-photo">
+                Preview photo
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/profile-update">
+                Profile update
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/transaction-pin-change">
+                Transaction pin change
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/transaction-pin-create">
+                Transaction pin create
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/transaction-pin-update">
+                Transaction pin update
+            </a>
+        </li>
+
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/transaction-pin-verify">
+                Transaction pin verify
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/upload-photograph">
+                Upload photograph
+            </a>
+        </li>
+
+        <li *ngIf="show_2">
+            <a mat-list-item routerLink="/withdraw">
+                Withdraw
+            </a>
+        </li>
+    </ul>
+
+    <a mat-list-item routerLink="/transaction" (click)="toggle_3()"> Transaction
+    </a>
+
+    <ul class="submenu">
+        <li *ngIf="show_3">
+            <a mat-list-item routerLink="/initiate">
+                Initiate
+            </a>
+        </li>
+
+        <li *ngIf="show_3">
+            <a mat-list-item routerLink="/list-by-merchant-email">
+                List by merchant email
+            </a>
+        </li>
+
+        <li *ngIf="show_3">
+            <a mat-list-item routerLink="/list-by-merchant">
+                List by merchant
+            </a>
+        </li>
+
+        <li *ngIf="show_3">
+            <a mat-list-item routerLink="/send-otp">
+                Send otp
+            </a>
+        </li>
+
+        <li *ngIf="show_3">
+            <a mat-list-item routerLink="/verify">
+                Verify
+            </a>
+        </li>
+
+        <li *ngIf="show_3">
+            <a mat-list-item routerLink="/verify-otp">
+                Verify otp
+            </a>
+        </li>
+    </ul>
+
+</mat-nav-list>

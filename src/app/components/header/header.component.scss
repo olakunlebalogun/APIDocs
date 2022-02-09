@@ -1,0 +1,52 @@
+mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+ul {
+    li {
+        list-style: none;
+    }
+}
+
+button {
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+
+
+
+.box {
+    width: 500px;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-left: 60px;
+}
+
+.box > mat-icon {
+    font-size: 20px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.box> input{
+    flex: 1;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    font-size: 11px;
+    position: absolute;
+    margin-top: 15px;
+}
