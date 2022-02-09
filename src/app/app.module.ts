@@ -72,12 +72,12 @@ import { TransactionPinVerifyComponent } from './components/merchant/transaction
 import { UploadPhotographComponent } from './components/merchant/upload-photograph/upload-photograph.component';
 import { WithdrawComponent } from './components/merchant/withdraw/withdraw.component';
 import { TransactionComponent } from './components/transaction/transaction.component';
-import { InitiateComponent } from './components/Transaction/initiate/initiate.component';
-import { ListByMerchantEmailComponent } from './components/Transaction/list-by-merchant-email/list-by-merchant-email.component';
-import { ListByMerchantComponent } from './components/Transaction/list-by-merchant/list-by-merchant.component';
-import { SendOtpComponent } from './components/Transaction/send-otp/send-otp.component';
-import { VerifyComponent } from './components/Transaction/verify/verify.component';
-import { VerifyOtpComponent } from './components/Transaction/verify-otp/verify-otp.component';
+import { InitiateComponent } from './components/transaction/initiate/initiate.component';
+import { ListByMerchantEmailComponent } from './components/transaction/list-by-merchant-email/list-by-merchant-email.component';
+import { ListByMerchantComponent } from './components/transaction/list-by-merchant/list-by-merchant.component';
+import { SendOtpComponent } from './components/transaction/send-otp/send-otp.component';
+import { VerifyComponent } from './components/transaction/verify/verify.component';
+import { VerifyOtpComponent } from './components/transaction/verify-otp/verify-otp.component';
 import { PasswordMobileResetComponent } from './components/entrance/password-mobile-reset/password-mobile-reset.component';
 import { DashboardOneComponent } from './components/merchant/dashboard-one/dashboard-one.component';
 

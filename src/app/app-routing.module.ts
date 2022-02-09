@@ -52,30 +52,42 @@ import { TransactionPinUpdateComponent } from './components/merchant/transaction
 import { TransactionPinVerifyComponent } from './components/merchant/transaction-pin-verify/transaction-pin-verify.component';
 import { UploadPhotographComponent } from './components/merchant/upload-photograph/upload-photograph.component';
 import { WithdrawComponent } from './components/merchant/withdraw/withdraw.component';
-import { InitiateComponent } from './components/Transaction/initiate/initiate.component';
-import { ListByMerchantEmailComponent } from './components/Transaction/list-by-merchant-email/list-by-merchant-email.component';
-import { ListByMerchantComponent } from './components/Transaction/list-by-merchant/list-by-merchant.component';
-import { SendOtpComponent } from './components/Transaction/send-otp/send-otp.component';
+import { InitiateComponent } from './components/transaction/initiate/initiate.component';
+import { ListByMerchantEmailComponent } from './components/transaction/list-by-merchant-email/list-by-merchant-email.component';
+import { ListByMerchantComponent } from './components/transaction/list-by-merchant/list-by-merchant.component';
+import { SendOtpComponent } from './components/transaction/send-otp/send-otp.component';
 import { TransactionComponent } from './components/transaction/transaction.component';
-import { VerifyOtpComponent } from './components/Transaction/verify-otp/verify-otp.component';
-import { VerifyComponent } from './components/Transaction/verify/verify.component';
+import { VerifyOtpComponent } from './components/transaction/verify-otp/verify-otp.component';
+import { VerifyComponent } from './components/transaction/verify/verify.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'entrance', component: EntranceComponent },
-  { path: 'authentication-password', component: UpdateAuthenticationPasswordComponent },
+  {
+    path: 'authentication-password',
+    component: UpdateAuthenticationPasswordComponent,
+  },
   { path: 'authentication-pin', component: UpdateAuthenticationPinComponent },
   { path: 'Merchant-photo', component: MerchantPhotoComponent },
   { path: 'onboard', component: OnboardComponent },
   { path: 'pass-changes', component: PassChangesComponent },
   { path: 'password-reset', component: PasswordResetComponent },
-  { path: 'password-reset-complete', component: PasswordResetCompleteComponent },
+  {
+    path: 'password-reset-complete',
+    component: PasswordResetCompleteComponent,
+  },
   { path: 'password-mobile-reset', component: PasswordMobileResetComponent },
   { path: 'pay-merchant', component: PayMerchantComponent },
   { path: 'pay-merchant-verify', component: PayMerchantVerifyComponent },
-  { path: 'payment-charge-retrieve', component: PaymentChargeRetrieveComponent },
-  { path: 'payment-charge-retrieve-pororation', component: PaymentChargeRetrievePororationComponent },
+  {
+    path: 'payment-charge-retrieve',
+    component: PaymentChargeRetrieveComponent,
+  },
+  {
+    path: 'payment-charge-retrieve-pororation',
+    component: PaymentChargeRetrievePororationComponent,
+  },
   { path: 'payment-initiate', component: PaymentInitiateComponent },
   { path: 'payment-installment', component: PaymentInstallmentComponent },
   { path: 'payment-link', component: PaymentLinkComponent },
@@ -88,8 +100,6 @@ const routes: Routes = [
   { path: 'sign-in', component: SignInComponent },
   { path: 'validate-cac', component: ValidateCacComponent },
 
-
-
   { path: 'file-uploader', component: FileUploaderComponent },
   { path: 'file-download', component: FileDownloadComponent },
   { path: 'upload-file', component: UploadFileComponent },
@@ -98,8 +108,14 @@ const routes: Routes = [
   { path: 'add-update-compliance', component: AddUpdateComplianceComponent },
   { path: 'add-update-payout', component: AddUpdatePayoutComponent },
   { path: 'add-transaction-pin', component: AddTransactionPinComponent },
-  { path: 'authentication-update-password', component: AuthenticationUpdatePasswordComponent },
-  { path: 'authentication-update-pin', component: AuthenticationUpdatePinComponent },
+  {
+    path: 'authentication-update-password',
+    component: AuthenticationUpdatePasswordComponent,
+  },
+  {
+    path: 'authentication-update-pin',
+    component: AuthenticationUpdatePinComponent,
+  },
   { path: 'bank-add', component: BankAddComponent },
   { path: 'list-bank', component: ListBankComponent },
   { path: 'banks', component: BanksComponent },
@@ -127,12 +143,10 @@ const routes: Routes = [
   { path: 'send-otp', component: SendOtpComponent },
   { path: 'verify', component: VerifyComponent },
   { path: 'verify-otp', component: VerifyOtpComponent },
-
-
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
