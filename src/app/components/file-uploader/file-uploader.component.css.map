@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "file-uploader.component.scss"
+    ],
+    "names": [],
+    "file": "file-uploader.component.css"
+}

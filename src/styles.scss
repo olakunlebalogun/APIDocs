@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+.mat-drawer-side {
+  border-right: none;
+}
+
+html,
 body {
-  padding: 20px;
+  height: 100%;
+  background-color: rgba(249, 251, 252, 0.9);
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

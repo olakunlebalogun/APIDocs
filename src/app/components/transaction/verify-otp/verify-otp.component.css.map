@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "verify-otp.component.scss"
+    ],
+    "names": [],
+    "file": "verify-otp.component.css"
+}
