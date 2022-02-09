@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-section-four',
   templateUrl: './section-four.component.html',
-  styleUrls: ['./section-four.component.scss']
+  styleUrls: ['./section-four.component.scss'],
 })
 export class SectionFourComponent implements OnInit {
+  @Input() code: string = ``;
+  @Input() response: string = '';
+  check: boolean = false;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  changed(evt: any) {
+    this.check = evt.target.checked;
   }
+  constructor() {}
 
+  ngOnInit(): void {}
 }
