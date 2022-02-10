@@ -22,9 +22,11 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { FormsModule } from '@angular/forms';
 
 import { EntranceComponent } from './components/entrance/entrance.component';
 import { UpdateAuthenticationPasswordComponent } from './components/entrance/update-authentication-password/update-authentication-password.component';
@@ -170,6 +172,11 @@ import { DashboardOneComponent } from './components/merchant/dashboard-one/dashb
     MatDividerModule,
     MatListModule,
     MatSidenavModule,
+    MatCardModule,
+    MatInputModule,
+    MatFormFieldModule,
+    MatSlideToggleModule,
+    FormsModule,
   ],
 
   providers: [],

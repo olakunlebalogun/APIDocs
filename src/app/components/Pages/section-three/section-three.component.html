@@ -1,3 +1,32 @@
- <div class="terminal">
-      <pre>{{content}}</pre>
-  </div>
+<!-- <div style="color: black">{{heading}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <mat-slide-toggle [(ngModel)]="showResponse" color="primary">Show Response</mat-slide-toggle> -->
+<div class="section-one">
+    <div class="left">
+        <select name="code" id="code">
+
+            <option disabled selected>cURL</option>
+            <option value="code">Code</option>
+            <option value="node">Node</option>
+        </select>
+    </div>
+    <!-- <div class="right" style="float: right;width: 60%;background-color: rgb(194, 163, 163);"> -->
+        <div class="right">
+        <label class="switch">
+            <span>Show Response</span>
+            <mat-slide-toggle [(ngModel)]="showResponse" color="primary"></mat-slide-toggle>
+            <!-- <span class="slider"></span> -->
+        </label>
+    </div>
+</div>
+<!-- </div> -->
+<div class="terminal" style="height: auto;">
+    <pre>{{content}}</pre>
+</div>
+
+
+<div *ngIf="showResponse">
+    <div style="color: black; margin-top: 20px;">{{response | uppercase}}</div>
+    <div class="terminal section-three">
+        <pre style="color:rgb(15, 15, 16) ;">{{responseDetails}}</pre>
+    </div>
+</div>
