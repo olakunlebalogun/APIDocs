@@ -1,6 +1,6 @@
 
 <div class="row">
-    <div class="col-md-7 col-sm-12">
+    <div class="col-md-9 col-sm-12">
         <main class="main">
             <div class="main__content">
                 <header>
@@ -10,17 +10,18 @@
                     <p>Merchant will need to provide their bank account name, bank account number and bank name. </p>
                     
                 </header>
+                <app-section-three [content]="content" [heading]="heading" [response]="response" [responseDetails]="responseDetails"></app-section-three>
             </div>
+            <!-- <div class="col-md-5"> -->
+                <!-- <main class="main" style="margin-top: -70px;"> -->
+                    <!-- <div class="main__content">
+                    </div> -->
+                <!-- </main> -->
+            <!-- </div> -->
     
         </main>
     </div>
-    <div class="col-md-5">
-        <main class="main" style="margin-top: 100px;">
-            <div class="main__content">
-                <app-section-three [content]="content" [heading]="heading" [response]="response" [responseDetails]="responseDetails"></app-section-three>
-            </div>
-        </main>
-    </div>
+   
 </div>
     
 
