@@ -19,4 +19,7 @@ export class UpdateAuthenticationPasswordComponent implements OnInit {
   "error_description": null,
   "meta": {}
 }`;
+
+  heading: string = 'Lanre is Bagger';
+  paragraph: string = `this is so sad that i dont knopw what to say`;
 }
