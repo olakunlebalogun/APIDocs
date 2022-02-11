@@ -1,14 +1,14 @@
-<div style="overflow-x: hidden;">
+<div>
     <div class="row">
         <div class="col-md-9 col-sm-12">
             <main class="main">
                 <div class="main__content">
                     <header>
                         <h1>Initiate Transaction</h1>
-                        <p>Status of transfer object returned will be pending if OTP is disabled. In the event that an OTP is required, status will read otp.</p>
+                        <p>Status of transfer object returned will be pending if OTP is disabled. In the event that an
+                            OTP is required, status will read otp.</p>
                     </header>
-
-
+                    <app-section-four [code]="code" [response]="response"></app-section-four>
                 </div>
             </main>
         </div>

@@ -7,7 +7,7 @@ import { faCoffee, faLightbulb } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./section-two.component.scss'],
 })
 export class SectionTwoComponent implements OnInit {
-  faCoffee = faCoffee;
+  // faCoffee = faCoffee;
   faLightbulb = faLightbulb;
   @Input() heading: string = '';
   @Input() paragraph: string = '';
