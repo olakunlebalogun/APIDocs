@@ -12,6 +12,7 @@ export class SectionTwoComponent implements OnInit {
   @Input() heading: string = '';
   @Input() paragraph: string = '';
   constructor() {}
+  
 
   ngOnInit(): void {}
 }
