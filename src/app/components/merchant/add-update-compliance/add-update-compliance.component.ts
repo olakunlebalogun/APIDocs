@@ -29,17 +29,17 @@ export class AddUpdateComplianceComponent implements OnInit {
   curl -X POST "https://swipe.ng:7000/swipepay/merchant/add-update-compliance" -H "accept: */*" -H 
   "Content-Type: application/json" -d "{ \"dataList\": [ { \"address\": \"string\", \"bvn\": \"string\",
    \"doc\": \"string\", \"id\": 0, \"nin\": \"string\" } ], \"id\": 0, \"merchant\": \"string\"}"`;
-  // content: string = `"dataList": [
-  //   {
-  //     "address": "string",
-  //     "bvn": "string",
-  //     "doc": "string",
-  //     "id": 0,
-  //     "nin": "string"
-  //   }
-  // ],
-  // "id": 0,
-  // "merchant": "string"`
+  content1: string = `
+    {
+      "address": "string",
+      "bvn": "string",
+      "doc": "string",
+      "id": 0,
+      "nin": "string"
+    }
+  ],
+  "id": 0,
+  "merchant": "string"`
   constructor() { }
 
 
