@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+<<<<<<< HEAD
 import { EntranceComponent } from './components/entrance/entrance.component';
 import { MerchantPhotoComponent } from './components/entrance/merchant-photo/merchant-photo.component';
 import { OnboardComponent } from './components/entrance/onboard/onboard.component';
@@ -143,6 +144,12 @@ const routes: Routes = [
   { path: 'send-otp', component: SendOtpComponent },
   { path: 'verify', component: VerifyComponent },
   { path: 'verify-otp', component: VerifyOtpComponent },
+=======
+import { SectionFiveComponent } from './components/Pages/section-five/section-five.component';
+
+const routes: Routes = [
+  {path:'five',component:SectionFiveComponent}
+>>>>>>> origin/design
 ];
 
 @NgModule({
