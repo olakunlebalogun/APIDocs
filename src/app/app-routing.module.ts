@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-<<<<<<< HEAD
 import { EntranceComponent } from './components/entrance/entrance.component';
 import { MerchantPhotoComponent } from './components/entrance/merchant-photo/merchant-photo.component';
 import { OnboardComponent } from './components/entrance/onboard/onboard.component';
@@ -60,11 +59,13 @@ import { SendOtpComponent } from './components/transaction/send-otp/send-otp.com
 import { TransactionComponent } from './components/transaction/transaction.component';
 import { VerifyOtpComponent } from './components/transaction/verify-otp/verify-otp.component';
 import { VerifyComponent } from './components/transaction/verify/verify.component';
+import { SectionFiveComponent } from './components/Pages/section-five/section-five.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'entrance', component: EntranceComponent },
+  { path: 'five', component: SectionFiveComponent },
   {
     path: 'authentication-password',
     component: UpdateAuthenticationPasswordComponent,
@@ -144,12 +145,6 @@ const routes: Routes = [
   { path: 'send-otp', component: SendOtpComponent },
   { path: 'verify', component: VerifyComponent },
   { path: 'verify-otp', component: VerifyOtpComponent },
-=======
-import { SectionFiveComponent } from './components/Pages/section-five/section-five.component';
-
-const routes: Routes = [
-  {path:'five',component:SectionFiveComponent}
->>>>>>> origin/design
 ];
 
 @NgModule({
