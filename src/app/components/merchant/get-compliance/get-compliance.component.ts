@@ -7,11 +7,46 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GetComplianceComponent implements OnInit {
   heading: string = 'curl';
-  response : string = 'Failed'
-  responseDetails: string = `{
-    "message": "Failed",
-    "code": "404",
-    "data": "Your account is invalid",
+  responseFailed : string = 'Failed'
+  responseSucess : string = 'Success'
+  responseDetails1: string = `{
+    "message": "Success",
+    "code": null,
+    "data": {
+      "files": [
+        {
+          "filesname": "driverscard_001.jpg",
+          "types": "address",
+          "id": 1
+        },
+        {
+          "filesname": "driverscard_001.jpg",
+          "types": "identification",
+          "id": 2
+        },
+        {
+          "filesname": "driverscard_001.jpg",
+          "types": "identification",
+          "id": 3
+        }
+      ],
+      "compliance": [
+        {
+          "id": 1,
+          "nin": "76996342411",
+          "address": "Abuja",
+          "doc": "string",
+          "bvn": "22190955063"
+        },
+        {
+          "id": 2,
+          "nin": "76996342411",
+          "address": "Abuja",
+          "doc": "string",
+          "bvn": "22190955063"
+        }
+      ]
+    },
     "error": null,
     "error_description": null,
     "meta": {}

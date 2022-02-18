@@ -10,13 +10,13 @@ export class AddTransactionPinComponent implements OnInit {
   responseFailed : string = 'Failed'
   responseSucess : string = 'Success'
   responseDetails1: string = `{
-    "message": "Success",
-    "code": "404",
-    "data": "Your account is invalid",
-    "error": null,
-    "error_description": null,
-    "meta": {}
-  }`
+      "message": "Success",
+      "code": 200,
+      "data": "Pin successfully reset",
+      "error": null,
+      "error_description": null,
+      "meta": {}
+    }`
   responseDetailsFailed : string =`{
     "message": "Failed",
     "code": "404",
