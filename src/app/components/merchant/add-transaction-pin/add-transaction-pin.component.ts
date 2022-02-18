@@ -29,6 +29,12 @@ export class AddTransactionPinComponent implements OnInit {
   curl -X POST "https://swipe.ng:7000/swipepay/merchant/add/transaction-pin" -H
    "accept: */*" -H "Content-Type: application/json" -d "{ \"email\": \"string\", 
    \"name\": \"string\", \"newpin\": \"string\"}"`;
+   content1: string = `
+    {
+      "email": "string",
+      "name": "string",
+      "newpin": "string"
+    }`
 
   constructor() { }
 

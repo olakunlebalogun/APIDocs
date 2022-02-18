@@ -7,8 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TransactionPinVerifyComponent implements OnInit {
   heading: string = 'curl';
-  response : string = 'Failed'
-  responseDetails: string = `{
+  responseFailed : string = 'Failed'
+  responseSucess : string = 'Success'
+  responseDetails1: string = `{
+      "message": "Failed",
+      "code": null,
+      "data": "Record not found",
+      "error": null,
+      "error_description": null,
+      "meta": {}
+  }`
+  responseDetailsFailed : string =`{
     "message": "Failed",
     "code": "404",
     "data": "Your account is invalid",
@@ -20,7 +29,11 @@ export class TransactionPinVerifyComponent implements OnInit {
   curl -X POST "https://swipe.ng:7000/swipepay/merchant/transactionpin/create" -H "accept: */*" -H
    "Content-Type: application/json" -d "{ \"accountid\": 0, \"answer\": \"string\", \"pin\": \"string\",
     \"question\": \"string\"}"`;
-
+    content1: string = `
+    {
+      "accountid": 0,
+      "pin": "string"
+    }`
   constructor() { }
 
   ngOnInit(): void {

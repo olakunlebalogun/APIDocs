@@ -7,11 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BvnVerifyComponent implements OnInit {
   heading: string = 'curl';
-  response : string = 'Success'
-  responseDetails: string = `{
+  responseFailed : string = 'Failed'
+  responseSucess : string = 'Success'
+  responseDetails1: string = `{
     "message": "Success",
-    "code": null,
+    "code": 200,
     "data": "Verification Completed",
+    "error": null,
+    "error_description": null,
+    "meta": {}
+  }`
+  responseDetailsFailed : string =`{
+    "message": "Failed",
+    "code": "404",
+    "data": "Your account is invalid",
     "error": null,
     "error_description": null,
     "meta": {}
@@ -19,6 +28,14 @@ export class BvnVerifyComponent implements OnInit {
   content: string = `
   curl -X POST "https://swipe.ng:7000/swipepay/merchant/bvn/check" -H "accept: */*" -H 
   "Content-Type: application/json" -d "{ \"accountid\": 544, \"auth\": \"string\"}"`;
+  content1: string = `
+  {
+  "accountid": 0,
+  "accountnumber": "string",
+  "bankcode": "string",
+  "bankname": "string",
+  "bvn": "string"
+}`
 
   constructor() { }
 

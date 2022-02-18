@@ -7,10 +7,23 @@
                     <h1>Check BVN </h1>
                    
                     <p>This API allows merchant to check their BVN. </p>
+                    <p>Merchant can make use of this endpoint by enter auth.</p>
+
                    
                     
                 </header>
-                <app-section-three [content]="content" [heading]="heading" [response]="response" [responseDetails]="responseDetails"></app-section-three>
+                <app-section-three [content]="content" [heading]="heading" [response]="responseSucess"
+                    [responseDetails]="responseDetails1"></app-section-three>
+                <div>
+                    <br>
+                    <h1>
+                        Invalid Parameter(s)
+                    </h1>
+                    <p> The result below will show if the result is not successful, this will be as result of an invalid
+                        value of at least one of the parameters.</p>
+                </div>
+                <app-section-three [content]="content1" [heading]="heading" [response]="responseFailed"
+                    [responseDetails]="responseDetailsFailed"></app-section-three>
             </div>
     
         </main>

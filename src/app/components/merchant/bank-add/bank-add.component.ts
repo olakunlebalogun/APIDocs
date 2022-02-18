@@ -7,11 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BankAddComponent implements OnInit {
   heading: string = 'curl';
-  response : string = 'Failed'
-  responseDetails: string = `{
+  responseFailed : string = 'Failed'
+  responseSucess : string = 'Success'
+  responseDetails1: string = `{
+    "message": "Success",
+    "code": "404",
+    "data": "Your account is invalid",
+    "error": null,
+    "error_description": null,
+    "meta": {}
+  }`
+  responseDetailsFailed : string =`{
     "message": "Failed",
-    "code": null,
-    "data": "Oops, record not found. Sorry",
+    "code": "404",
+    "data": "Your account is invalid",
     "error": null,
     "error_description": null,
     "meta": {}
@@ -20,6 +29,13 @@ export class BankAddComponent implements OnInit {
   curl -X POST "https://swipe.ng:7000/swipepay/merchant/bank/add" -H "accept: */*" -H 
   "Content-Type: application/json" -d "{ \"accountid\": 0, \"accountnumber\": \"string\", 
   \"bankcode\": \"string\", \"bankname\": \"string\"}"`;
+  content1: string = `
+  {
+    "accountid": 0,
+    "accountnumber": "string",
+    "bankcode": "string",
+    "bankname": "string"
+  }`
 
   constructor() { }
 

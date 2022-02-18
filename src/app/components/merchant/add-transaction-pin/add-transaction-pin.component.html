@@ -4,23 +4,28 @@
             <div class="main__content">
                 <header>
                     <h1>Add Transaction Pin</h1>
-                    <p>The transaction pin API enables merchants to add their BVN, NIN, Proof of address and Means of
-                        Identification as requirement to become a Merchant.</p>
-                    
+                    <p>Add transaction pin API enable merchant to add desired transaction pin of their choice for the completion of various financial transactions from our
+                        platform to bank.
+                    </p>
+
+
                 </header>
 
                 <h1>Upload of Utility Bill and Means of Identification</h1>
-                <p>You will need to Upload proof of address and means of Identification as part of the compliance.</p>
+                <p>Merchant need to entered registered email, name and newpin.</p>
 
-                <app-section-three [content]="content" [heading]="heading" [response]="responseSucess" [responseDetails]="responseDetails1"></app-section-three>
+                <app-section-three [content]="content" [heading]="heading" [response]="responseSucess"
+                    [responseDetails]="responseDetails1"></app-section-three>
                 <div>
                     <br>
-                   <h1>
-                    Invalid Parameter(s)
-                  </h1>
-                 <p> The result below will show if the result is not successful, this will be as result of an invalid value of at least one of the parameters.</p>
+                    <h1>
+                        Invalid Parameter(s)
+                    </h1>
+                    <p> The result below will show if the result is not successful, this will be as result of an invalid
+                        value of at least one of the parameters.</p>
                 </div>
-                <app-section-three [content]="content" [heading]="heading" [response]="responseFailed" [responseDetails]="responseDetailsFailed"></app-section-three>
+                <app-section-three [content]="content1" [heading]="heading" [response]="responseFailed"
+                    [responseDetails]="responseDetailsFailed"></app-section-three>
 
                 <ul></ul>
 
@@ -31,83 +36,3 @@
 
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="row">
-    <div class="col-md-9 col-sm-12">
-        <main class="main">
-            <div class="main__content">
-                <header>
-                    <h1>Add Compliance</h1>
-                    <p>The Compliance API enables merchants to add their BVN, NIN, Proof of address and Means of
-                        Identification as requirement to become a Merchant.
-                    </p>
-                </header>
-
-                <h1>Upload of Utility Bill and Means of Identification</h1>
-                <p>You will need to Upload proof of address and means of Identification as part of the compliance.</p>
-
-                <app-section-three [content]="content" [heading]="heading" [response]="response"
-                    [responseDetails]="responseDetails"></app-section-three>
-
-            </div>
-            <div>
-                <h1>
-                    Invalid Parameter(s)
-                </h1>
-                <p> The result below will show if the result is not successful, this will be as result of an invalid
-                    value of at least one of the parameters.</p>
-            </div>
-            <app-section-three [content]="content" [heading]="heading" [response]="response"
-                [responseDetails]="responseDetails"></app-section-three>
-
-            <div class="main__content">
-            </div>
-
-
-        </main>
-    </div>
-
-</div> -->
-
-
-
-
-<!-- <div class="row">
-    <div class="col-md-9 col-sm-12">
-        <main class="main">
-            <div class="main__content">
-                <header>
-                    <h1> Add Transaction PIN</h1>
-                   
-                    <p>Transaction pin is required to be entered to complete various financial transactions from our platform to your bank.
-                        The core purpose of a personal identification number (PIN) is to provide an additional layer of security to the electronic transaction process</p>
-                   
-                    
-                </header>
-                <app-section-three [content]="content" [heading]="heading" [response]="response" [responseDetails]="responseDetails"></app-section-three>
-            </div>
-    
-        </main>
-    </div>
-   
-</div>
-    
-
- -->

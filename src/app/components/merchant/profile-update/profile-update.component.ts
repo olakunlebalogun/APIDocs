@@ -7,8 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfileUpdateComponent implements OnInit {
   heading: string = 'curl';
-  response : string = 'Failed'
-  responseDetails: string = `{
+  responseFailed : string = 'Failed'
+  responseSucess : string = 'Success'
+  responseDetails1: string = `{
+      "message": "Failed",
+      "code": null,
+      "data": "Record not found",
+      "error": null,
+      "error_description": null,
+      "meta": {}
+  }`
+  responseDetailsFailed : string =`{
     "message": "Failed",
     "code": "404",
     "data": "Your account is invalid",
@@ -18,6 +27,16 @@ export class ProfileUpdateComponent implements OnInit {
   }`
   content: string = `
   curl -X GET "https://swipe.ng:7000/swipepay/merchant/bank/list" -H "accept: */*"`;
+  content1: string = `
+  {
+    "accountid": 0,
+    "contactaddress": "string",
+    "contactmobile": "string",
+    "gender": "string",
+    "lga": "string",
+    "name": "string",
+    "stateorigin": "string"
+  }`
 
   constructor() { }
 
