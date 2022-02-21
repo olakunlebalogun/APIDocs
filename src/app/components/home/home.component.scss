@@ -1,41 +1,28 @@
-
-
 header {
-    margin-bottom: 50px;
-  }
-  
-//   header {
-  
+  margin-bottom: 50px;
+}
 
-//   }
-  
-  header h1 {
-    margin-top: -8px;
-  }
-  
-  
-  .main {
-    height: 100%;
-    display: grid;
-    min-height: 100%;
-    grid-template-rows: 2fr 1fr;
-    padding: 30px 30px 30px 15px;
-  }
-  
-  h1 {
-    font-size: 20px;
-    line-height: 1.2;
-    margin: 0 0 10px;
-    font-weight: bold;
-  }
-  
-  
-  
-  
-@media screen and (max-width: 767px){}
+header h1 {
+  margin-top: -8px;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+  padding: 30px 30px 30px 15px;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+}
 .ktsUrB {
-    display: block;
-    margin-bottom: 20px;
+  display: block;
 }
 
 .ktsUrB {
@@ -48,9 +35,6 @@ header {
   transition: box-shadow 0.3s ease-in 0s, border-color 0.3s ease-in 0s;
 }
 
-
-
-
 a {
   text-decoration: none;
 }
@@ -59,40 +43,13 @@ a {
   color: #09a5db;
 }
 
-
-
-
-
 .quick_start_body {
   padding: 15px 20px 20px;
 }
 
-
 .quick_start_body h4 {
   margin-top: 0px;
 }
-
-h4 {
-  font-size: 16px;
-  margin: 28px 0 8px;
-  line-height: 1.2;
-}
-
-h4 {
-  font-style: normal;
-  font-weight: 500;
-}
-
-
-
-
-
-
-
-
-
-
-
 
 .quick_start_body p {
   line-height: 1.45;
@@ -100,13 +57,10 @@ h4 {
   color: rgb(1, 27, 51);
 }
 
-
 p {
   margin: 15px 0 0;
-  letter-spacing: -.01px;
+  letter-spacing: -0.01px;
 }
-
-
 
 a {
   text-decoration: none;
@@ -115,17 +69,24 @@ a {
 a {
   color: #09a5db;
 }
-  header p {
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: -.03px;
-    margin: 20px 0 0;
-  }
-  
-  
-  
+header p {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.03px;
+  margin: 20px 0 0;
+}
 
-  .images {
-    width: 250px;
-    text-align: center;
-  }
+.images {
+  width: 250px;
+  text-align: center;
+}
+
+.card_1 {
+  display: inline;
+  vertical-align: middle;
+}
+
+.card_2 {
+  display: inline;
+  vertical-align: middle;
+}
