@@ -1,28 +1,4 @@
-<!-- <div class="container">
-  <div class="section-one">
-<div class="left-input">
-  <select name="code" id="code">
 
-  <option value="curl">cURL</option>
-  <option value="code">Code</option>
-</select>
-</div>
-<div class="right-input">
-  <h4>Show Response</h4>
-  <input type="radio" name="response" id="checkbox">
-</div>
-  </div>
-  <div class="section-two">
-    <pre>
-
-    </pre>
-  </div>
-  <div class="section-three">
-    <pre>
-
-    </pre>
-  </div>
-</div> -->
 
 <div class="container">
   <div class="section-one">
@@ -37,22 +13,16 @@
     <div class="right">
       <h6>Show response</h6>
       <label class="switch">
-        <input type="checkbox" [checked]="check" (change)="changed($event)">
+        <input type="checkbox" [checked]="check" (change)="check = !check">
         <span class="slider"></span>
       </label>
     </div>
   </div>
   <div class="section-two">
-    <p>
-
-    </p>
+    <p>{{code}}</p>
   </div>
-
-  <div class="section-three">
-
-<p>
-
-    </p>
+  <div class="section-three" *ngIf="check">
+    <p>{{response}}</p>
   </div>
 </div>
 

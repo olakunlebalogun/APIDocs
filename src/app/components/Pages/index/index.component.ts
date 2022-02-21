@@ -24,5 +24,17 @@ export class IndexComponent implements OnInit {
   "perPage": 50,
 }`;
 
+  cod: string = `curl -X POST
+  "https://swipe.ng:7000/swipepay/entrance/payment/otp/send"
+  -H "accept: */*"
+   -H "Content-Type: application/json" -d "{ \"ref\": \"784853983\"}"`;
+  res: string = `{
+  "message": "Failed",
+  "code": "404",
+  "data": "Oops! Unable to verify transaction at the moment. Please try again",
+  "error": null,
+  "error_description": null,
+  "meta": {}
+}`;
   ngOnInit(): void {}
 }
