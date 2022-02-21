@@ -6,12 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./get-compliance.component.scss']
 })
 export class GetComplianceComponent implements OnInit {
-  heading: string = 'curl';
-  responseFailed : string = 'Failed'
-  responseSucess : string = 'Success'
-  responseDetails1: string = `{
+ 
+  response: string = `{
     "message": "Success",
-    "code": null,
+    "code": 200,
     "data": {
       "files": [
         {
@@ -51,7 +49,7 @@ export class GetComplianceComponent implements OnInit {
     "error_description": null,
     "meta": {}
   }`
-  content: string = `
+  code: string = `
   curl -X GET "https://swipe.ng:7000/swipepay/merchant/get-compliance?merchant=30228" -H "accept: */*"`;
 
   constructor() { }

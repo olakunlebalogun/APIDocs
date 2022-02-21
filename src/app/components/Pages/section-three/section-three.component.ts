@@ -11,6 +11,7 @@ export class SectionThreeComponent implements OnInit {
   @Input() content: string = '';
   @Input() response: string = '';
   @Input() responseDetails: string = '';
+  
 
   constructor() {}
 

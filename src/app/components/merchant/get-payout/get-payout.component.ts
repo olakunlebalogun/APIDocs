@@ -6,10 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./get-payout.component.scss']
 })
 export class GetPayoutComponent implements OnInit {
-  heading: string = 'curl';
-  responseFailed : string = 'Failed'
-  responseSucess : string = 'Success'
-  responseDetails1: string = `{
+ 
+  response: string = `{
       "message": "Success",
       "code": null,
       "data": [],
@@ -17,7 +15,7 @@ export class GetPayoutComponent implements OnInit {
       "error_description": null,
       "meta": {}
     }`
-  content: string = `
+  code: string = `
   curl -X GET "https://swipe.ng:7000/swipepay/merchant/get-payout?merchant=30228" -H "accept: */*"`;
 
   constructor() { }

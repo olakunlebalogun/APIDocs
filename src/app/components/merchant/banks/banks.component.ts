@@ -6,9 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banks.component.scss']
 })
 export class BanksComponent implements OnInit {
-  heading: string = 'curl';
-  response : string = 'Failed'
-  responseDetails: string = `{
+  response: string = `{
     "message": "Failed",
     "code": null,
     "data": "Oops, record not found. Sorry",
@@ -16,7 +14,7 @@ export class BanksComponent implements OnInit {
     "error_description": null,
     "meta": {}
   }`
-  content: string = `
+  code: string = `
   curl -X POST "https://swipe.ng:7000/swipepay/merchant/bank/add" -H "accept: */*" -H 
   "Content-Type: application/json" -d "{ \"accountid\": 0, \"accountnumber\": \"string\", 
   \"bankcode\": \"string\", \"bankname\": \"string\"}"`;

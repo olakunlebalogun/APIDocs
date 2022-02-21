@@ -6,9 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./delete-payout.component.scss']
 })
 export class DeletePayoutComponent implements OnInit {
-  heading: string = 'curl';
-  response : string = 'Failed'
-  responseDetails: string = `{
+ 
+  response: string = `{
     "message": "Failed",
     "code": "404",
     "data": "Your account is invalid",
@@ -16,7 +15,7 @@ export class DeletePayoutComponent implements OnInit {
     "error_description": null,
     "meta": {}
   }`
-  content: string = `
+  code: string = `
   curl -X DELETE "https://swipe.ng:7000/swipepay/merchant/delete-payout?id=30228&merchant=yyyy" -H "accept: */*"`;
 
 
