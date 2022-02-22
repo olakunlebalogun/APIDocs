@@ -1,1 +1,31 @@
-<p>send-otp works!</p>
+<div class="container mt-3">
+    <h5>
+        Send Otp
+    </h5>
+    <p>
+        A one-time password ( OTP ), also known as a one-time PIN or dynamic password, is a password that is valid for
+        only one login session or transaction, on a computer system or other digital device.
+    </p>
+
+    <p>
+        Due to the security breaches caused by scammers and spammers have lost various important business details and
+        eventually the business loss. Setting up an OTP API verification provides a business with the secure and safest
+        environment to use mobile phones for shopping, business, financial transactions etc. OTP verification not only
+        provides phone security but also keeps your personal computers or laptops secure.
+    </p>
+
+    <strong>Authentication Key</strong>
+    <p class="mt-1">
+        HTTP requests to the APIs are protected with user-based authentication key authkey. For every request, you would
+        be needing this key. Please visit here for more info.
+    </p>
+    <app-section-three [content]="One"></app-section-three>
+
+    <div class="mt-3">
+        <strong>Response</strong>
+        <p>For a successful uploading, <strong>the parameters listed above must be provided</strong>.</p>
+        <app-section-four [code]="codeOne" [response]="responseOne"></app-section-four>
+        <p>If any of the request parameter is not provided, it will return <strong>failed</strong>.</p>
+        <app-section-four [code]="codeTwo" [response]="responseTwo"></app-section-four>
+    </div>
+</div>

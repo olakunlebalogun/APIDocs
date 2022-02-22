@@ -3,11 +3,77 @@
         <main class="main">
             <div class="main__content">
                 <header>
-                    <h1>SwipeTech Documentation</h1>
-                    <p>Welcome to the SwipeTech Developer Documentation where you’ll learn how to build amazing payment
-                        experiences with
-                        the SwipeTech API.</p>
+                    <h1>Onboard</h1>
+                    <p>This is the endpoint responsible for signing up an account, it is the first the merchant does to register an account </p>
                 </header>
+                <div class="body">
+                  <h2>Signing Up</h2>
+                  <p>
+                    To access the Sign up page click <code><a href="https://swipe.ng:7000/swipepay/entrance/onboard">here</a></code>.
+                  </p>
+                    <p>
+                      To be able to sign up, the following parameters <strong>must</strong> be supplied to the request
+                    </p>
+
+                   <ul>
+                      <li>
+                        Business Type: This is the parameter which defines the type of business the merchant who want to sign in does.
+                      </li>
+                      <li>
+                        Company Name: This is the name of the merchant.
+                      </li>
+                      <li>
+                        Contact Email: The email of the merchant.
+                      </li>
+                      <li>
+                        Contact Mobile: The mobile number of the merchant.
+                      </li>
+                      <li>
+                        Gender.
+                      </li>
+                      <li>
+                        id : this is the id of the merchant, and since the merchant is just signing up, the id will be 0;
+                      </li>
+                      <li>
+                        Name : Name of the merchant.
+                      </li>
+                      <li>
+                        Password : Password of the merchant
+                      </li>
+                      <li>
+                        RC Number : This is the merchant RC number i.e the company registration number.
+                      </li>
+                      <li>
+                        Referral: This is the name of the merchant's referral.
+                      </li>
+                    </ul>
+
+                    <p>Sample of the Request Body in the terminal:</p>
+
+                    <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+                </div>
+
+                <div>
+                  <h2>
+                    Successful Sign Up
+                  </h2>
+
+                  <p>
+                    For a successful sign up, <strong>the parameters listed above must be provided and the merchant must be registering for the first time</strong>.
+                  </p>
+                  <div>
+                    <p>Below shows an example of a successful sign up by <strong>Smith Rowe</strong></p>
+
+                  <app-section-four [code]="curlOne" [response]="resOne"></app-section-four>
+                  </div>
+
+                  <div>
+                    <p>If any of the request parameter is not provided, or the id is <b>NOT</b> set to zero, or the merchant has once registered with the same email.</p>
+                    <p>This case in point the id is not set to zero.</p>
+                    <app-section-four [code]="curlTwo" [response] = "resTwo" ></app-section-four>
+                  </div>
+
+                </div>
             </div>
         </main>
     </div>

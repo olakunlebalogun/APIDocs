@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FileDownloadComponent implements OnInit {
 
+  One: string = `
+  {
+    "file": "Olaoluwa_Lawrence_Dapo_Admission_Letter.PDF",
+    "merchantid": "898965953867317248",
+    "types": "testing",
+  }`;
+
+  
   constructor() { }
 
   ngOnInit(): void {

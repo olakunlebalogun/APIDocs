@@ -12,6 +12,7 @@ export class SectionTwoComponent implements OnInit {
   @Input() heading: string = 'Feature Availability';
   @Input() paragraph: string = 'This feature is only available to businesses in Nigeria and Ghana.';
   constructor() {}
+  
 
   
 

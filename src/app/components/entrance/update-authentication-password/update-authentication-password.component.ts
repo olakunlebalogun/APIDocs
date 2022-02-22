@@ -9,8 +9,9 @@ export class UpdateAuthenticationPasswordComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
   code: string = `
-  curl -X POST "https://swipe.ng:7000/swipepay/entrance/auth_update/passwords" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"email\": \"olakunle22@gmail.com\", \"newpassword\": \"olaoluwa\", \"tokens\": \"23456\"}"`;
+  curl -X POST "https://swipe.ng:7000/swipepay/entrance/auth_update/passwords" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"email\": \"us@ourmail.com", \"newpassword\": \"newpassword\", \"tokens\": \"23456\"}"`;
   response: string = `{
   "message": "Failed",
   "code": null,
@@ -19,7 +20,4 @@ export class UpdateAuthenticationPasswordComponent implements OnInit {
   "error_description": null,
   "meta": {}
 }`;
-
-  heading: string = 'Lanre is Bagger';
-  paragraph: string = `this is so sad that i dont knopw what to say`;
 }

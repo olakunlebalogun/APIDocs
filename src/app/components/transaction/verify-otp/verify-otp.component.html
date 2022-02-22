@@ -1,1 +1,59 @@
-<p>verify-otp works!</p>
+<div class="container mt-3">
+    <h5>
+        Verify OTP
+    </h5>
+    <p>
+        The SMS Verify API delivers phone-based verification and two-factor authentication using a limited duration,
+        one-time passcode sent over SMS
+    </p>
+
+    <p>
+        You can either generate the verification code yourself or have TeleSign generate it for you. You can also
+        optionally screen verification SMS recipients by risk score or SIM swap risk indicator. You also have the option
+        to configure your verification codes to expire after a set duration of time or after a max number of attempts by
+        an end user.
+    </p>
+
+    <strong>
+        Common Use Cases:
+    </strong>
+
+    <ul>
+        <li>Two Factor Authentication (2FA) <span> - Prompt a user, after entering
+                their password, to enter
+                a verification code you send to their phone number to complete a log-in process.</span></li>
+        <li>Password Reset<span> - Ask a user to enter a verification code you
+                send to their phone number; if they enter it correctly, allow that user to reset their password.</span>
+        </li>
+        <li>
+            Login verification<span> - Make sure a user is not
+                entering a fake phone number, by sending a verification code to their phone and asking them to enter it
+                in.</span>
+        </li>
+        <li>
+            Payment Verification <span>- Verify a payment with Strong Customer Authentication (SCA), as part of
+                compliance with the European Union's Revised Payment Services Directive (PSD2). This use case is
+                relevant to fintechs, open banking solutions, payment service providers (PSP), and e-commerce
+                platforms.</span>
+        </li>
+    </ul>
+
+    <strong>
+        General Requirements
+    </strong>
+
+    <app-section-three [content]="One"></app-section-three>
+
+    <div class="mt-2">
+        <strong>Successful Verification</strong>
+    <app-section-four [code]="codeOne" [response]="responseOne"></app-section-four>
+    </div>
+
+    <div class="mt-2">
+        <strong>Failed</strong>
+    <app-section-four [code]="codeTwo" [response]="responseTwo"></app-section-four>
+    </div>
+
+
+
+</div>
