@@ -3,11 +3,38 @@
         <main class="main">
             <div class="main__content">
                 <header>
-                    <h1>SwipeTech Documentation</h1>
-                    <p>Welcome to the SwipeTech Developer Documentation where you’ll learn how to build amazing payment
-                        experiences with
-                        the SwipeTech API.</p>
+                    <h1>Payment Initiation</h1>
+                    <p>This is the endpoint where the merchant payments starts.</p>
                 </header>
+
+                <div>
+                  <h2>Initiating Payment</h2>
+                  <p>For a payment to take place, the merchant must provide certain request parameters as listed below:</p>
+                  <ul>
+                    <li>
+                      Account Number : This is the <b>email</b> of the merchant here the transaction will take place
+                    </li>
+                    <li>
+                      Amount : This is the amount of money to be paid.
+                    </li>
+                    <li>
+                      Description : A brief description of the transaction to be made.
+                    </li>
+                    <li>
+                      Merchant ID : The id given to the merchant when the account was being setup.
+                    </li>
+                    <li>
+                      Transaction Pin: This is the pin that will be sent to the merchant email or contact-mobile.
+                    </li>
+
+                  </ul>
+                </div>
+
+                <div>
+                  <p>This is the sample of the request parameter in the terminal</p>
+
+                    <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+                </div>
             </div>
         </main>
     </div>

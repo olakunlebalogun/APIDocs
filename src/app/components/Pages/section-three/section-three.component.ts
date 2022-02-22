@@ -6,12 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./section-three.component.scss'],
 })
 export class SectionThreeComponent implements OnInit {
-  showResponse : any
   @Input() heading: string = '';
   @Input() content: string = '';
-  @Input() response: string = '';
-  @Input() responseDetails: string = '';
-  
 
   constructor() {}
 

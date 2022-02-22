@@ -9,8 +9,9 @@ export class UpdateAuthenticationPasswordComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
   code: string = `
-  curl -X POST "https://swipe.ng:7000/swipepay/entrance/auth_update/passwords" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"email\": \"olakunle22@gmail.com\", \"newpassword\": \"olaoluwa\", \"tokens\": \"23456\"}"`;
+  curl -X POST "https://swipe.ng:7000/swipepay/entrance/auth_update/passwords" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"email\": \"us@ourmail.com", \"newpassword\": \"newpassword\", \"tokens\": \"23456\"}"`;
   response: string = `{
   "message": "Failed",
   "code": null,

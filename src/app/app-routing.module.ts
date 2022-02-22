@@ -59,11 +59,13 @@ import { SendOtpComponent } from './components/transaction/send-otp/send-otp.com
 import { TransactionComponent } from './components/transaction/transaction.component';
 import { VerifyOtpComponent } from './components/transaction/verify-otp/verify-otp.component';
 import { VerifyComponent } from './components/transaction/verify/verify.component';
+import { SectionFiveComponent } from './components/Pages/section-five/section-five.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'entrance', component: EntranceComponent },
+  { path: 'five', component: SectionFiveComponent },
   {
     path: 'authentication-password',
     component: UpdateAuthenticationPasswordComponent,

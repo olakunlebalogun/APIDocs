@@ -10,9 +10,9 @@ export class SectionFourComponent implements OnInit {
   @Input() response: string = '';
   check: boolean = false;
 
-  changed(evt: any) {
-    this.check = evt.target.checked;
-  }
+  // changed(evt: any) {
+  //   this.check = evt.target.checked;
+  // }
   constructor() {}
 
   ngOnInit(): void {}

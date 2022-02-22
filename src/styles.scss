@@ -21,5 +21,112 @@ body {
   overflow: hidden;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+//   header {
+
+//   }
+
+header h1 {
+  margin-top: -8px;
+}
+
+.main {
+  height: 100%;
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: 2fr 1fr;
+  padding: 30px 30px 30px 15px;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+}
+.ktsUrB {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.ktsUrB {
+  background: rgb(255, 255, 255);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  box-shadow: rgb(0 0 0 / 3%) 0px 1px 1px;
+  border-radius: 10px;
+  width: 350px;
+  transition: box-shadow 0.3s ease-in 0s, border-color 0.3s ease-in 0s;
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  color: #09a5db;
+}
+
+.quick_start_body {
+  padding: 15px 20px 20px;
+}
+
+.quick_start_body h4 {
+  margin-top: 0px;
+}
+
+h4 {
+  font-size: 16px;
+  margin: 28px 0 8px;
+  line-height: 1.2;
+}
+
+h4 {
+  font-style: normal;
+  font-weight: 500;
+}
+
+.quick_start_body p {
+  line-height: 1.45;
+  margin-top: 0px;
+  color: rgb(1, 27, 51);
+}
+
+p {
+  margin: 15px 0 0;
+  letter-spacing: -0.01px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a {
+  color: #09a5db;
+}
+header p {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.03px;
+  margin: 20px 0 0;
+}
+
+.images {
+  width: 250px;
+  text-align: center;
+}

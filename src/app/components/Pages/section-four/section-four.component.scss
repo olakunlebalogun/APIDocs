@@ -16,56 +16,72 @@
 
 .section-two {
   position: relative;
-  width: clamp(300px, 538px, 538px);
+  width: clamp(250px, 538px, 538px);
+  // max-width: 100%;
+  border-radius: 6px;
+  margin-top: 8px;
+  // overflow-x: hidden;
+
+  background-color: rgb(49, 72, 95);
+  height: 200px;
+  box-shadow: rgb(0 0 0 / 3%) 0px 1px 1px;
+  // counter-reset: section;
+  // max-height: 300px;
+}
+.section-three {
+  position: relative;
+  width: clamp(2500px, 538px, 538px);
   max-width: 100%;
   border-radius: 6px;
   margin-top: 8px;
   // overflow-x: auto;
-  display: block;
-  overflow: hidden;
+  // overflow:hidden;
   background-color: rgb(49, 72, 95);
   height: 200px;
   box-shadow: rgb(0 0 0 / 3%) 0px 1px 1px;
-  counter-reset: section;
-  max-height: 300px;
-}
-.section-three {
-  position: relative;
-  width: clamp(300px, 538px, 538px);
-  max-width: 100%;
-  border-radius: 6px;
-  margin-top: 8px;
-  overflow-x: auto;
-  background-color: rgb(49, 72, 95);
-  height: 200px;
-  box-shadow: rgb(0 0 0 / 3%) 0px 1px 1px;
-  counter-reset: section;
-  max-height: 300px;
+  // counter-reset: section;
+  // max-height: 300px;
   border: 1px solid rgb(238, 242, 245);
-  box-sizing: border-box;
+  // box-sizing: border-box;
   background-color: rgb(255, 255, 255);
 }
-.section-two pre {
+.section-two p {
+  // font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  // color: white;
+  // padding: 0 1rem 1rem;
+  // display: flex;
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   color: white;
   padding: 0 1rem 1rem;
   margin: 0;
+  user-select: none;
+  // counter-increment: section;
+  // text-align: justify;
+  // overflow: hidden;
 }
-.section-three pre {
+.section-three p {
+  // font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  // color: white;
+  // padding: 0 1rem 1rem;
   font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
   color: black;
   padding: 0 1rem 1rem;
   margin: 0;
-}
-.section-two pre::before {
+  user-select: none;
   counter-increment: section;
-  content: "" counter(section) ": ";
+  // overflow: hidden;
+  text-align: justify;
+  color: black;
 }
+// .section-two pre::before{
+//   counter-increment: section;
+//   content: "" counter(section) ": ";
+// }
 
-.section-three pre::before {
-  counter-increment: section;
-  content: "" counter(section) ": ";
-}
+// .section-three pre::before{
+//   counter-increment: section;
+//   content: "" counter(section) ": ";
+// }
 
 .left-input {
   color: black;
