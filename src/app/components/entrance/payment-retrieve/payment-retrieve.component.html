@@ -3,11 +3,48 @@
         <main class="main">
             <div class="main__content">
                 <header>
-                    <h1>SwipeTech Documentation</h1>
-                    <p>Welcome to the SwipeTech Developer Documentation where you’ll learn how to build amazing payment
-                        experiences with
-                        the SwipeTech API.</p>
+                    <h1>Retrieve Payment</h1>
+                    <p>This endpoint helps to track or know the customers' payment history</p>
                 </header>
+                <div class="body">
+                    <h2>Retrieving payments</h2>
+                   
+                      <p>
+                        To retrieve customer's payments, the customer's reference number <strong>must</strong> be supplied.
+                      </p>
+  
+                     <ul>
+                        <li>
+                          Reference Number : this number is unique to every transaction made by a particular customer.
+                        </li>
+                      </ul>
+  
+                      <p>Sample of the Request Body in the terminal:</p>
+  
+                      <app-section-three [content]="countOne" [heading]="headOne"></app-section-three>
+                  </div>
+  
+                  <div>
+                    <h2>
+                      Successful payment retrieval
+                    </h2>
+  
+                    <p>
+                      To successfully retrieve payment, <strong>the parameter stated above must be provided</strong>.
+                    </p>
+                    <div>
+                      <p>Below shows an example of expected response for a successful payment retrieval</p>
+  
+                    <app-section-four [code]="curlSuc" [response]="resSuc"></app-section-four>
+                    </div>
+  
+                    <div>
+                      <p>If the reference number provided is <b>NOT</b> valid or incorrect</p>
+                     
+                      <app-section-four [code]="curlErr" [response] = "curlErr" ></app-section-four>
+                    </div>
+  
+                  </div>
             </div>
         </main>
     </div>

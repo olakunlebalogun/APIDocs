@@ -3,11 +3,57 @@
         <main class="main">
             <div class="main__content">
                 <header>
-                    <h1>SwipeTech Documentation</h1>
-                    <p>Welcome to the SwipeTech Developer Documentation where you’ll learn how to build amazing payment
-                        experiences with
-                        the SwipeTech API.</p>
+                    <h1>Payment Installment</h1>
+                    <p>This endpoint helps to spread payment over a period of time, mainly
+                    </p>
+                    <ul>
+                        <li>One time payment</li>
+                        <li>Two-time payment</li>
+                        <li>Three-time payment</li>
+                    </ul>
                 </header>
+                <div class="body">
+                    <h2>Installment Plan</h2>
+                   
+                      <p>
+                        For a customer to choose the duration of repayment, the following parameters <strong>must</strong> be supplied to the request
+                      </p>
+  
+                     <ul>
+                        <li>
+                          Ref: This is a unique number for a particular transaction made by customer.
+                        </li><li>
+                            selectedInstallment:The expected value here is 1,2 or 3. This tells the number of times
+                            a customer is willing to repay.
+                          </li>
+                      
+                      </ul>
+  
+                      <p>Sample of the Request Body in the terminal:</p>
+  
+                      <app-section-three [content]="countOne" [heading]="headOne"></app-section-three>
+                  </div>
+                  <div>
+                    <h2>
+                      Successful Installment
+                    </h2>
+  
+                    <p>
+                      For customer to spread repayment duration, <strong>the parameters listed above must be provided.</strong>.
+                    </p>
+                    <div>
+                      <p>Below is an example of expected response from a successful Installment payment</p>
+  
+                    <app-section-four [code]="curlSuc" [response]="resSuc"></app-section-four>
+                    </div>
+  
+                    <div>
+                      <p>If any of the request parameter is <strong>not</strong> provided</p>
+                     
+                      <app-section-four [code]="curlErr" [response] = "resErr" ></app-section-four>
+                    </div>
+  
+                  </div>
             </div>
         </main>
     </div>
