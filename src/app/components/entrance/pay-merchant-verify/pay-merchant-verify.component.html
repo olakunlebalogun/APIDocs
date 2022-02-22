@@ -3,11 +3,46 @@
         <main class="main">
             <div class="main__content">
                 <header>
-                    <h1>SwipeTech Documentation</h1>
-                    <p>Welcome to the SwipeTech Developer Documentation where you’ll learn how to build amazing payment
-                        experiences with
-                        the SwipeTech API.</p>
+                    <h1>Verify Merchant Payment</h1>
+                    <p>This is the endpoint  responsible for vreifing the payment of a merchant</p>
                 </header>
+                <div class="body">
+                    <h2>Verify payment</h2>
+                    <p>For you to proceed with the verification , you will need the following request:</p>
+                    <ul>
+                        <li>
+                          Merchant Id
+                        </li>
+                        <li>
+                         Reference
+                        </li>
+                      
+                      </ul>
+                      <p>Sample of  Request Parameters in the terminal:</p>
+                      <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+                </div>
+
+                <div>
+                    <h2>
+                      Successful Verification process
+                    </h2>
+  
+                    <p>
+                      For a successful verification, <strong>the parameters listed above must be provided before a successful verification is completed</strong>.
+                    </p>
+                    <div>
+                      <p>Below shows an example of a successful verification process <strong>Smith Rowe</strong></p>
+  
+                    <app-section-four [code]="curlOne" [response]="resOne"></app-section-four>
+                    </div>
+  
+                    <div>
+                      <p>If any of the request parameter is not valid</p>
+                     
+                      <app-section-four [code]="curlTwo" [response] = "resTwo" ></app-section-four>
+                    </div>
+  
+                  </div>
             </div>
         </main>
     </div>
@@ -15,3 +50,4 @@
 
     </div>
 </div>
+
