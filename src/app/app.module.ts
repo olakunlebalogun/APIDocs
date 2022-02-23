@@ -85,6 +85,7 @@ import { VerifyComponent } from './components/transaction/verify/verify.componen
 import { VerifyOtpComponent } from './components/transaction/verify-otp/verify-otp.component';
 import { PasswordMobileResetComponent } from './components/entrance/password-mobile-reset/password-mobile-reset.component';
 import { DashboardOneComponent } from './components/merchant/dashboard-one/dashboard-one.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -158,6 +159,7 @@ import { DashboardOneComponent } from './components/merchant/dashboard-one/dashb
     VerifyComponent,
     VerifyOtpComponent,
     PasswordMobileResetComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

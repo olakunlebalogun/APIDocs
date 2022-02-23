@@ -9,9 +9,11 @@ import { faCoffee, faLightbulb } from '@fortawesome/free-solid-svg-icons';
 export class SectionTwoComponent implements OnInit {
   // faCoffee = faCoffee;
   faLightbulb = faLightbulb;
-  @Input() heading: string = '';
-  @Input() paragraph: string = '';
+  @Input() heading: string = 'Feature Availability';
+  @Input() paragraph: string = 'This feature is only available to businesses in Nigeria and Ghana.';
   constructor() {}
+  
+
   
 
   ngOnInit(): void {}
