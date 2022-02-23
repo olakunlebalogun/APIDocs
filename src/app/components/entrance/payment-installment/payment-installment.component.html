@@ -3,57 +3,58 @@
         <main class="main">
             <div class="main__content">
                 <header>
-                    <h1>Payment installment</h1>
-                    <p>Payment plan, give customers the opportunity to buy a product or service even if they can’t afford it upfront.</p>
-                </header>
-                <div class="body">
-                    <h2>Payment pay</h2>
 
-                    <p>
-                        To access the payment plan click
-                        <code><a href="https://swipe.ng:7000/swipepay/entrance/onboard">here</a></code>.
-                    </p>
-                    <p>
-                        To be able to access the payment plan, the following parameters <strong>must</strong> be supplied to the request
+                    <h1>Payment Installment</h1>
+                    <p>This endpoint helps to spread payment over a period of time, mainly
                     </p>
                     <ul>
-                        <li>
-                            Ref: References Number
-                        </li>
-                        <li>
-                            Selected Installment: the types of installment you want.
-                        </li>
+                        <li>One time payment</li>
+                        <li>Two-time payment</li>
+                        <li>Three-time payment</li>
                     </ul>
-                    <p>To initiate the payment plan, you will need to provide your ref, selected installment:</p>
+                </header>
+                <div class="body">
+                    <h2>Installment Plan</h2>
 
-                    <app-section-three [content]="One"></app-section-three>
-                </div>
+                      <p>
+                        For a customer to choose the duration of repayment, the following parameters <strong>must</strong> be supplied to the request
+                      </p>
 
-                <div>
+                     <ul>
+                        <li>
+                          Ref: This is a unique number for a particular transaction made by customer.
+                        </li><li>
+                            selectedInstallment:The expected value here is 1,2 or 3. This tells the number of times
+                            a customer is willing to repay.
+                          </li>
+
+                      </ul>
+
+                      <p>Sample of the Request Body in the terminal:</p>
+
+                      <app-section-three [content]="countOne" [heading]="headOne"></app-section-three>
+                  </div>
+                  <div>
                     <h2>
-                        Successful payment plan
+                      Successful Installment
                     </h2>
 
                     <p>
-                        For a successful payment plan, <strong>the parameters listed above must be provided and the
-                            merchant must be registering
-                            for the first time</strong>.
+                      For customer to spread repayment duration, <strong>the parameters listed above must be provided.</strong>.
                     </p>
-
                     <div>
-                        <p>Below shows an example of a successful payment plan by <strong>Smith Rowe</strong></p>
+                      <p>Below is an example of expected response from a successful Installment payment</p>
 
-                        <app-section-four [code]="curlOne" [response]="resOne"></app-section-four>
+                    <app-section-four [code]="curlSuc" [response]="resSuc"></app-section-four>
                     </div>
 
                     <div>
-                        <p>If any of the request parameter is not provided, or the id is <b>NOT</b> set to zero, or the merchant has once registered with the same email.</p>
-                        <p>This case in point the id is not set to zero.</p>
-                        <app-section-four [code]="curlTwo" [response]="resTwo"></app-section-four>
+                      <p>If any of the request parameter is <strong>not</strong> provided</p>
+
+                      <app-section-four [code]="curlErr" [response] = "resErr" ></app-section-four>
                     </div>
-                </div>
 
-
+                  </div>
             </div>
         </main>
     </div>
