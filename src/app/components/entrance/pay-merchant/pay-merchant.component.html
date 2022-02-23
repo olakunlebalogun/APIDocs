@@ -1,73 +1,69 @@
-<div class="row">
-    <div class="col-md-9 col-sm-12">
-        <main class="main">
-            <div class="main__content">
-                <header>
-                    <h1>Pay Merchant</h1>
-                    <p>This is the endpoint  responsible for processing  payment of a merchant</p>
-                </header>
-                <div class="body">
-                    <h2>Pay a Merchant</h2>
-                    <p>For you to proceed with the payment , you will need the following request:</p>
-                    <ul>
-                        <li>
-                          Account name
-                        </li>
-                        <li>
-                          Account number
-                        </li>
-                        <li>
-                         Amount
-                        </li>
-                        <li>
-                         Bank name
-                        </li>
-                        <li>
-                        Item name
-                        </li>
-                        <li>
-                         Merchant email
-                        </li>
-                        <li>
-                          Phone number
-                        </li>
-                        <li>
-                        User's transaction pin
-                        </li>
-                        <li>
-                        User's email
-                        </li>
+<div class="container mt-3">
 
-                      </ul>
-                      <p>Sample of  Request Parameters in the terminal:</p>
-                      <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
-                </div>
+<div class="main__content">
 
-                <div>
-                    <h2>
-                      Successful Payment process
-                    </h2>
+  <h5>Pay Merchant</h5>
+  <p>This is the endpoint responsible for processing payment of a merchant</p>
 
-                    <p>
-                      For a successful payment process, <strong>the parameters listed above must be provided before a successful payment is completed</strong>.
-                    </p>
-                    <div>
-                      <p>Below shows an example of a successful payment process <strong>Smith Rowe</strong></p>
+  <div class="body">
+    <strong>Pay a Merchant</strong>
+    <p>For you to proceed with the payment , you will need the following request:</p>
+    <ul>
+      <li>
+        Account name
+      </li>
+      <li>
+        Account number
+      </li>
+      <li>
+        Amount
+      </li>
+      <li>
+        Bank name
+      </li>
+      <li>
+        Item name
+      </li>
+      <li>
+        Merchant email
+      </li>
+      <li>
+        Phone number
+      </li>
+      <li>
+        User's transaction pin
+      </li>
+      <li>
+        User's email
+      </li>
 
-                    <app-section-four [code]="curlOne" [response]="resOne"></app-section-four>
-                    </div>
+    </ul>
+    <p>Sample of Request Parameters in the terminal:</p>
+    <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+  </div>
 
-                    <div>
-                      <p>If any of the request parameter is not valid</p>
+  <div class="mt-3">
+    <strong>
+      Successful Payment process
+    </strong>
 
-                      <app-section-four [code]="curlTwo" [response] = "resTwo" ></app-section-four>
-                    </div>
+    <p>
+      For a successful payment process, <strong>the parameters listed above must be provided before a successful payment
+        is completed</strong>.
+    </p>
+    <div>
+      <p>Below shows an example of a successful payment process <strong>Smith Rowe</strong></p>
 
-                  </div>
-            </div>
-        </main>
+      <app-section-four [code]="curlOne" [response]="resOne"></app-section-four>
     </div>
-    <div class="col-md-3">
 
+    <div>
+      <p>If any of the request parameter is not valid</p>
+
+      <app-section-four [code]="curlTwo" [response]="resTwo"></app-section-four>
     </div>
+
+  </div>
+</div>
+
 </div>

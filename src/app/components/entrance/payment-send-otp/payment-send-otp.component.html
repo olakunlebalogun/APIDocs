@@ -1,17 +1,42 @@
-<div class="row">
-    <div class="col-md-9 col-sm-12">
-        <main class="main">
-            <div class="main__content">
-                <header>
-                    <h1>SwipeTech Documentation</h1>
-                    <p>Welcome to the SwipeTech Developer Documentation where you’ll learn how to build amazing payment
-                        experiences with
-                        the SwipeTech API.</p>
-                </header>
-            </div>
-        </main>
+<div class="container mt-3">
+  <div class="main__content">
+    <h5>Send OTP</h5>
+    <p>This is the endpoint responsible for sending OTP</p>
+
+    <div class="body">
+      <strong>Sending of OTP</strong>
+      <p>For you to proceed with the sending of OTP , you will need this request:</p>
+      <ul>
+        <li>
+          Reference number
+        </li>
+
+      </ul>
+      <p>Sample of Request Parameters in the terminal:</p>
+      <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
     </div>
-    <div class="col-md-3">
+
+    <div class="mt-3">
+      <strong>
+        Successful Sent OTP
+      </strong>
+
+      <p>
+        For a successful sent OTP, <strong>the parameter above must be provided before a successful otp message is
+          completed</strong>.
+      </p>
+      <div>
+        <p>Below shows an example of a successful sent otp <strong>Smith Rowe</strong></p>
+
+        <app-section-four [code]="curlOne" [response]="resOne"></app-section-four>
+      </div>
+
+      <div>
+        <p>If the request parameter is not valid</p>
+
+        <app-section-four [code]="curlTwo" [response]="resTwo"></app-section-four>
+      </div>
 
     </div>
+  </div>
 </div>
