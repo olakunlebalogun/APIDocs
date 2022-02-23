@@ -6,33 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./secret-question.component.scss']
 })
 export class SecretQuestionComponent implements OnInit {
-   One: string = `
+    One: string = `
  {
-  "body": {},
-  "statusCode": "100 CONTINUE",
-  "statusCodeValue": 0
+  "merchant": "konga"
 }`;
 
-  curlOne: string = `curl -X POST "https://swipe.ng:7000/swipepay/entrance/payment/installment" -H 
-  "accept: */*" -H "Content-Type: application/json" -d 
-  "{ \"ref\": \"945601618746806272\", \"selectedInstallment\": 1}"`;
+ curlOne: string = `curl -X GET "https://swipe.ng:7000/swipepay/transactions/list/by-merchant?merchant=konga" -H "accept: */*"`;
 
    resOne: string = `
   {
-  "message": "Failed",
-  "code": "500",
-  "data": "Oops! An error occurred. Kindly contact support.",
+   "message": "Success",
+  "code": "200",
+  "data": [],
   "error": null,
   "error_description": null,
   "meta": {}
 }`;
 
-curlTwo: string = `
-  curl -X POST "https://swipe.ng:7000/swipepay/entrance/payment/installment" -H 
+curlTwo: string = `curl -X POST "https://swipe.ng:7000/swipepay/entrance/payment/installment" -H 
   "accept: */*" -H "Content-Type: application/json" -d 
   "{ \"ref\": \"945601618746806272\", \"selectedInstallment\": 1}"`;
-  resTwo: string = `
- {
+  resTwo: string = `{
   "message": "Failed",
   "code": "500",
   "data": "Oops! An error occurred. Kindly contact support.",

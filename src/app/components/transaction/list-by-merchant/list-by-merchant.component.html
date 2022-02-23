@@ -1,1 +1,67 @@
-<p>list-by-merchant works!</p>
+<div class="row">
+    <div class="col-md-9 col-sm-12">
+        <main class="main">
+            <div class="main__content">
+                <header>
+                    <h1>List by Merchant</h1>
+                    <p>The number of customers in an organization</p>
+                </header>
+                <div class="body">
+                    <h2>List of Merchant</h2>
+
+                    <p>
+                        To access the list by Merchant click
+                        <code><a href="https://swipe.ng:7000/swipepay/entrance/onboard">here</a></code>.
+                    </p>
+                    <p>
+                        To be able to access the list by merchant, the following parameters <strong>must</strong> be supplied to the request
+                    </p>
+                    <ul>
+                        <li>
+                            Body
+                        </li>
+                        <li>
+                            Status code
+                        </li>
+                        <li>
+                            Status code value
+                        </li>
+                    </ul>
+                    <p>To initiate the list by merchant, you will need to provide your body, status code and status code value:
+                    </p>
+
+                    <app-section-three [content]="One"></app-section-three>
+                </div>
+
+                <div>
+                    <h2>
+                        Successful list by Merchant
+                    </h2>
+
+                    <p>
+                        For a successful list by merchant, <strong>the parameters listed above must be provided and the
+                            merchant must be registering
+                            for the first time</strong>.
+                    </p>
+
+                    <div>
+                        <p>Below shows an example of a successful list by merchant by <strong>Smith Rowe</strong></p>
+
+                        <app-section-four [code]="curlOne" [response]="resOne"></app-section-four>
+                    </div>
+
+                    <div>
+                        <p>If any of the request parameter is not provided, or the id is <b>NOT</b> set to zero, or the merchant has once registered with the same email.</p>
+                        <p>This case in point the id is not set to zero.</p>
+                        <app-section-four [code]="curlTwo" [response]="resTwo"></app-section-four>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+    <div class="col-md-3">
+
+    </div>
+</div>
