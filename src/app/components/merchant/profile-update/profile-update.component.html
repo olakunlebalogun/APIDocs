@@ -1,1 +1,33 @@
-<p>profile-update works!</p>
+
+<div class="row">
+    <div class="col-md-9 col-sm-12">
+        <main class="main">
+            <div class="main__content">
+                <header>
+                    <h1>Update Account</h1>
+                    
+                    <p>Merchant updateAccount API allows merchant to update their Account details.</p>
+                    <p>To update account merchant need to enter contactaddress, contactmobile, gender, lga, name and stateorigin.</p>
+
+                
+                    
+                </header>
+                <app-section-four [code]="code" [response]="response"></app-section-four>
+            <div>
+                <br>
+                <h1>
+                    Invalid Parameter(s)
+                </h1>
+                <p> The result below will show if the result is not successful, this will be as result of an invalid
+                    value of at least one of the parameters.</p>
+            </div>
+            <app-section-four [code]="code" [response]="response"></app-section-four>
+            </div>
+    
+        </main>
+    </div>
+   
+</div>
+    
+
+

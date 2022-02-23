@@ -6,6 +6,51 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./get-compliance.component.scss']
 })
 export class GetComplianceComponent implements OnInit {
+ 
+  response: string = `{
+    "message": "Success",
+    "code": 200,
+    "data": {
+      "files": [
+        {
+          "filesname": "driverscard_001.jpg",
+          "types": "address",
+          "id": 1
+        },
+        {
+          "filesname": "driverscard_001.jpg",
+          "types": "identification",
+          "id": 2
+        },
+        {
+          "filesname": "driverscard_001.jpg",
+          "types": "identification",
+          "id": 3
+        }
+      ],
+      "compliance": [
+        {
+          "id": 1,
+          "nin": "76996342411",
+          "address": "Abuja",
+          "doc": "string",
+          "bvn": "22190955063"
+        },
+        {
+          "id": 2,
+          "nin": "76996342411",
+          "address": "Abuja",
+          "doc": "string",
+          "bvn": "22190955063"
+        }
+      ]
+    },
+    "error": null,
+    "error_description": null,
+    "meta": {}
+  }`
+  code: string = `
+  curl -X GET "https://swipe.ng:7000/swipepay/merchant/get-compliance?merchant=30228" -H "accept: */*"`;
 
   constructor() { }
 

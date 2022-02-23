@@ -1,26 +1,30 @@
-
 <div class="row">
-    <div class="col-md-7 col-sm-12">
+    <div class="col-md-9 col-sm-12">
         <main class="main">
             <div class="main__content">
                 <header>
                     <h1>Add Payout</h1>
-
-                    <p>The Payout feature allows Merchant to add their bank account details where they will be cashing out their money to.</p>
+                   
+                    <p>Add Payout API allows Merchant to add their respective bank account details.</p>
                     <p>Merchant will need to provide their bank account name, bank account number and bank name. </p>
 
                 </header>
-            </div>
+                <app-section-four [code]="code" [response]="response"></app-section-four>
+                <div>
+                    <br>
+                   <h1>
+                    Invalid Parameter(s)
+                  </h1>
+                 <p> The result below result show unsuccessful, this will be as result of an invalid value of at least one of the parameters.</p>
+                </div>
+                <app-section-four [code]="code" [response]="response"></app-section-four>
 
+                <ul></ul>
+
+            </div>
         </main>
     </div>
-    <div class="col-md-5">
-        <main class="main" style="margin-top: 100px;">
-            <div class="main__content">
-            </div>
-        </main>
+    <div class="col-md-3">
+
     </div>
 </div>
-
-
-
