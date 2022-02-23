@@ -19,6 +19,12 @@ export class AuthenticationUpdatePasswordComponent implements OnInit {
   curl -X POST "https://swipe.ng:7000/swipepay/merchant/auth_update/password" -H "accept: */*" -H 
   "Content-Type: application/json" -d "{ \"email\": \"string\", \"newpassword\": \"string\",
    \"tokens\": \"string\"}"`;
+   headOne: string = `Update Password`;
+   contOne: string = `{
+   "email": "our@gmail.com",
+   "newpassword": "12345",
+   "tokens": "ar538dg780"
+ }`;
 
 
   constructor() { }

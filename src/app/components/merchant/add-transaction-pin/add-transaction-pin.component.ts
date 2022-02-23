@@ -18,7 +18,12 @@ export class AddTransactionPinComponent implements OnInit {
       "error_description": null,
       "meta": {}
     }`
-
+    headOne: string = `Update Password`;
+    contOne: string = `{
+        "email": "us@ourmail.com",
+        "name": "segun",
+        "newpin": "12345"
+  }`;
   constructor() { }
 
   ngOnInit(): void {

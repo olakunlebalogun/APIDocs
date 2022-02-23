@@ -20,7 +20,20 @@ export class AddUpdatePayoutComponent implements OnInit {
   curl -X POST "https://swipe.ng:7000/swipepay/merchant/add-update-payout" -H "accept: */*" -H "Content-Type:
    application/json" -d "{ \"dataList\": [ { \"accountname\": \"Adelabu Mubarak\", \"accountnumber\": \"5481349570\",
     \"bankname\": \"First Bank\", \"id\": 0 } ], \"merchant\": \"923169181303779328 \"}"`;
-
+    headOne: string = `Update Password`;
+    contOne: string = `{
+      {
+        "dataList": [
+          {
+            "accountname": "Adebisi Diamond Abba",
+            "accountnumber": "3088134957",
+            "bankname": "First Bank",
+            "id": 0
+          }
+        ],
+        "merchant": "923169181303779328"
+      }
+  }`;
   
   constructor() { }
 

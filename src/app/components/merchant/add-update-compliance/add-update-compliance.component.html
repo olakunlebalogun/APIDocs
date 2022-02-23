@@ -4,6 +4,65 @@
             <div class="main__content">
                 <header>
                     <h1>Add Compliance</h1>
+                    <p>
+                        The Compliance API enables merchants to add their compliance form as requirement to become a Merchant.
+                    </p>
+                </header>
+
+                <h1>
+                    Add Compliance
+                </h1>
+                <p>You will need to send  a POST request to addCompliance endpoint with the following parameters</p>
+
+
+                <ul>
+                  <li>BVN</li>
+                  <li>NIN </li>
+                  <li>Proof of address</li>
+                  <li>Means of Identification</li>
+                </ul>
+                
+                <p>THe JSON representation is shown below</p>
+
+                <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+                <h2>Valid Parameters</h2>
+                <p>To initiate addCompliance, you will need to Upload proof of address and means of Identification as part of the compliance.</p>
+               
+                <app-section-four [code]="code" [response]="response">
+
+                </app-section-four>
+                <div>
+                   <h1>
+                    Invalid Parameter(s)
+                  </h1>
+                 <p> The result below will show if the result is not successful, this will be as result of an invalid value of at least one of the parameters.</p>
+                </div>
+                <app-section-four [code]="code" [response]="response"></app-section-four>
+
+                <ul></ul>
+
+            </div>
+        </main>
+    </div>
+    <div class="col-md-3">
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="row">
+    <div class="col-md-9 col-sm-12">
+        <main class="main">
+            <div class="main__content">
+                <header>
+                    <h1>Add Compliance</h1>
                     <p>The Compliance API enables merchants to add their BVN, NIN, Proof of address and Means of
                         Identification as requirement to become a Merchant.</p>
                     
@@ -32,7 +91,7 @@
     <div class="col-md-3">
 
     </div>
-</div>
+</div> -->
 
 
 
@@ -69,21 +128,12 @@
                     [responseDetails]="responseDetails"></app-section-three>
 
             </div>
-<<<<<<< HEAD
             <div>
                 <h1>
                     Invalid Parameter(s)
                 </h1>
                 <p> The result below will show if the result is not successful, this will be as result of an invalid
                     value of at least one of the parameters.</p>
-=======
-            <div class="col-md-3">
-                <main class="main" style="margin-top: auto;">
-                    <div class="main__content">
-                        <app-section-three [content]="content" [heading]="heading" ></app-section-three>
-                    </div>
-                </main>
->>>>>>> f7fcf7f9e8e73692cb5ac7f7507b11779ceec633
             </div>
             <app-section-three [content]="content" [heading]="heading" [response]="response"
                 [responseDetails]="responseDetails"></app-section-three>

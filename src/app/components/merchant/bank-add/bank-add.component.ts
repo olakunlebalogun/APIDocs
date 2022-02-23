@@ -11,7 +11,7 @@ export class BankAddComponent implements OnInit {
       "code": 200,
       "data": {
         "account_number": "3322134957",
-        "account_name": "Adekunle Diamond Abba"
+        "account_name": "Adebisi Diamond Abba"
       },
       "error": null,
       "error_description": null,
@@ -22,7 +22,13 @@ export class BankAddComponent implements OnInit {
   curl -X POST "https://swipe.ng:7000/swipepay/merchant/bank/add" -H "accept: */*" -H 
   "Content-Type: application/json" -d "{ \"accountid\": 0, \"accountnumber\": \"string\", 
   \"bankcode\": \"string\", \"bankname\": \"string\"}"`;
-
+  headOne: string = `Update Password`;
+  contOne: string = `{
+      "accountid": 232,
+      "accountnumber": "3022223112",
+      "bankcode": "011",
+      "bankname": "First Bank"
+}`;
   constructor() { }
 
   ngOnInit(): void {

@@ -18,6 +18,20 @@ export class AddUpdateComplianceComponent implements OnInit {
       "error_description": null,
       "meta": {}
     }`
+    headOne: string = `Update Password`;
+    contOne: string = `{
+        "dataList": [
+          {
+            "address": "Athlantic Herald Beside Total PH ",
+            "bvn": "22266666222",
+            "doc": "MyDocs",
+            "id": 0,
+            "nin": "MyNationalID"
+          }
+        ],
+        "id": 0,
+        "merchant": "923169181303779328 "
+  }`
   constructor() { }
 
 

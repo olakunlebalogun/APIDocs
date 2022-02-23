@@ -3,25 +3,39 @@
         <main class="main">
             <div class="main__content">
                 <header>
-                    <h1>Add Transaction Pin</h1>
-                    <p>Add transaction pin API enable merchant to add desired transaction pin of their choice for the completion of various financial transactions from our
+                    <h1>Ping Pin</h1>
+                    <p>
+                        Pingpin API enable merchant to add desired transaction pin of their choice for the completion of various financial transactions from our
                         platform to bank.
                     </p>
-
-
                 </header>
 
-                <h1>Upload of Utility Bill and Means of Identification</h1>
-                <p>Merchant need to entered registered email, name and newpin.</p>
+                <h1>
+                    Add Transaction Pin
+                </h1>
+                <p>You will need to send  a POST request to pingPin endpoint with the following parameters</p>
 
-                <app-section-four [code]="code" [response]="response"></app-section-four>
+
+                <ul>
+                  <li>Your Registered Email</li>
+                  <li>Name </li>
+                  <li>Newpin</li>
+                </ul>
+
+                <p>THe JSON representation is shown below</p>
+
+                <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+                <h2>Valid Parameters</h2>
+                <p>To initiate add transaction pin, you will need to provide your email, name, and your newpin</p>
+
+                <app-section-four [code]="code" [response]="response">
+
+                </app-section-four>
                 <div>
-                    <br>
-                    <h1>
-                        Invalid Parameter(s)
-                    </h1>
-                    <p> The result below will show if the result is not successful, this will be as result of an invalid
-                        value of at least one of the parameters.</p>
+                   <h1>
+                    Invalid Parameter(s)
+                  </h1>
+                 <p> The result below will show if the result is not successful, this will be as result of an invalid value of at least one of the parameters.</p>
                 </div>
                 <app-section-four [code]="code" [response]="response"></app-section-four>
 
@@ -34,3 +48,4 @@
 
     </div>
 </div>
+
