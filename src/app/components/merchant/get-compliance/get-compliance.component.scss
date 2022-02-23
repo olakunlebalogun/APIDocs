@@ -16,7 +16,7 @@ header {
     min-height: 100%;
     grid-template-rows: 2fr 1fr;
     padding: 30px 30px 30px 15px;
-  }s
+  }
   
   h1 {
     font-size: 30px;
@@ -31,4 +31,12 @@ header {
     letter-spacing: -0.03px;
     margin: 20px 0 0;
   }
+
+  
+h5 {
+  font-size: 20px;
+  line-height: 1.2;
+  margin: 0 0 10px;
+  font-weight: bold;
+}
    

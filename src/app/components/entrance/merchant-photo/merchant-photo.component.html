@@ -1,60 +1,47 @@
-<div class="row">
-    <div class="col-md-9 col-sm-12">
-        <main class="main">
-            <div class="main__content">
-                <header>
-                    <h1>Photo API</h1>
-                    
-                    <p>This endpoint allows the retrieval and manipulation of image files referenced from assets.</p>
-                </header>
+<div class="container mt-3">
+  <div class="main__content">
+    <h5>Photo API</h5>
 
-                <div class="content-body">
-                    <h2>Upload Photo</h2>
-                    <p>
-                        For a merchant to upload photo, the following parameters <strong>must</strong> be supplied to the request.
+    <p>This endpoint allows the retrieval and manipulation of image files referenced from assets.</p>
 
-                      </p>
-                      <ul>
-                        <li>
-                          Display: This determines the appearance of the image, the default value for display is inline.
-                        </li>
-                        <li>
-                          Filename: This is the name of the photo/logo the merchant wants to be used as a reference image and this 
-                          is unique to every merchant <strong>(No two merchant can use same photo)</strong>
+    <div class="content-body">
+      <strong>Upload Photo</strong>
+      <p>
+        For a merchant to upload photo, the following parameters <strong>must</strong> be supplied to the request.
 
-                        </li>
-                      </ul>
-                      <p>Sample of the Request Body in the terminal:</p>
-  
-                  <app-section-three [heading]="headOne" [content] = "contOne"></app-section-three>
-                </div>
-                <div>
-                    <h2>
-                      Photo uploaded successfully
-                    </h2>
-  
-                    <p>
-                      For a successful photo upload, <strong>the parameters listed above must be provided</strong>.
-                    </p>
-                    <div>
-                      <p>Below shows an example of a successful photo upload by  <strong>Konga Limited</strong></p>
-  
-                    <app-section-four [code]="curlSucc" [response]="resSucc"></app-section-four>
-                    </div>
-  
-                    <div>
-                      <p>If any of the request parameter is not provided, or the file chosen <strong>doesnot</strong> exist</p>
-                      <p>You get the response body below </p>
-                      <app-section-four [code]="curlErr" [response] = "resErr" ></app-section-four>
-                    </div>
-  
-                  </div>
-            </div>
+      </p>
+      <ul>
+        <li>
+          Display: This determines the appearance of the image, the default value for display is inline.
+        </li>
+        <li>
+          Filename: This is the name of the photo/logo the merchant wants to be used as a reference image and this
+          is unique to every merchant <strong>(No two merchant can use same photo)</strong>
 
+        </li>
+      </ul>
+      <p>Sample of the Request Body in the terminal:</p>
 
-        </main>
+      <app-section-three [heading]="headOne" [content]="contOne"></app-section-three>
     </div>
-    <div class="col-md-3">
+    <div class="mt-3">
+      <strong>Photo uploaded successfully</strong>
+
+      <p>
+        For a successful photo upload, <strong>the parameters listed above must be provided</strong>.
+      </p>
+      <div>
+        <p>Below shows an example of a successful photo upload by <strong>Konga Limited</strong></p>
+
+        <app-section-four [code]="curlSucc" [response]="resSucc"></app-section-four>
+      </div>
+
+      <div>
+        <p>If any of the request parameter is not provided, or the file chosen <strong>doesnot</strong> exist</p>
+        <p>You get the response body below </p>
+        <app-section-four [code]="curlErr" [response]="resErr"></app-section-four>
+      </div>
 
     </div>
+  </div>
 </div>

@@ -1,57 +1,48 @@
-<div class="row">
-    <div class="col-md-9 col-sm-12">
-        <main class="main">
-            <div class="main__content">
-                <header>
-                    <h1>Update Authentication Pin</h1>
-                    <p>This endpoint allows merchant update their authentication pin</p>
+<div class="container mt-3">
 
-                    <p>
-                      This endpoint merchants who has register before reset their authentication pin by providing the following information:</p>
+  <div class="main__content">
+    <h5>Update Authentication Pin</h5>
+    <p>This endpoint allows merchant update their authentication pin</p>
 
-                      <p>The following information will be provided by the merchant</p>
-                    <ul>
-                      <li>Email</li>
-                      <li>New Pin</li>
-                      <li>Secret Answer</li>
-                      <li>Secret Question</li>
-                      <li>Tokens</li>
-                    </ul>
+    <p>
+      This endpoint merchants who has register before reset their authentication pin by providing the following
+      information:</p>
 
-                    <h4>Method: <span>POST</span></h4>
+    <p>The following information will be provided by the merchant</p>
+    <ul>
+      <li>Email</li>
+      <li>New Pin</li>
+      <li>Secret Answer</li>
+      <li>Secret Question</li>
+      <li>Tokens</li>
+    </ul>
 
-                    <h4>URL: <span>http://</span></h4>
+    <h4>Method: <span>POST</span></h4>
 
-                    <h4>Header</h4>
-                    <ul>
-                      <li>Content-Type: application/json</li>
-                    </ul>
+    <p>URL: <span>http://</span></p>
 
-                    <h4>Body: <span>JSON object with the fields</span></h4>
-                    <ul>
-                      <li>email (required):</li>
-                      <li>New Pin (required):</li>
-                      <li>Secret Answer (required):</li>
-                      <li>Secret Question (required):</li>
-                      <li>Tokens (required):</li>
+    <strong>Header</strong>
+    <ul>
+      <li>Content-Type: application/json</li>
+    </ul>
 
-                    </ul>
+    <p>Body: <span>JSON object with the fields</span></p>
+    <ul>
+      <li>email (required):</li>
+      <li>New Pin (required):</li>
+      <li>Secret Answer (required):</li>
+      <li>Secret Question (required):</li>
+      <li>Tokens (required):</li>
 
-                    <h4>Return Status:</h4>
-                     <ul>
-                      <li>200 : Successful response</li>
-                      <li>403 : </li>
-                      <li>404 : </li>
-                    </ul>
+    </ul>
 
-
+    <p>Return Status:</p>
+    <ul>
+      <li>200 : Successful response</li>
+      <li>403 : </li>
+      <li>404 : </li>
+    </ul>
+  </div>
 
 
-                </header>
-            </div>
-        </main>
-    </div>
-    <div class="col-md-3">
-
-    </div>
 </div>

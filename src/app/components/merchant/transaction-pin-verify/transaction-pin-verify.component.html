@@ -1,33 +1,20 @@
+<div class="container mt-3">
+    <div class="main__content">
 
-<div class="row">
-    <div class="col-md-9 col-sm-12">
-        <main class="main">
-            <div class="main__content">
-                <header>
-                    <h1>Verifying Transaction Pin</h1>
-                    
-                    <p>This API allows merchant to verifying transaction Pin.</p>
-                    
+        <h5>Verifying Transaction Pin</h5>
 
-                    
-                </header>
-                <app-section-four [code]="code" [response]="response"></app-section-four>
-            <div>
-                <br>
-                <h1>
-                    Invalid Parameter(s)
-                </h1>
-                <p> The result below will show if the result is not successful, this will be as result of an invalid
-                    value of at least one of the parameters.</p>
-            </div>
-            <app-section-four [code]="code" [response]="response"></app-section-four>
-                
-            </div>
-    
-        </main>
+        <p>This API allows merchant to verifying transaction Pin.</p>
+
+
+        <app-section-four [code]="code" [response]="response"></app-section-four>
+        <div>
+            <strong>
+                Invalid Parameter(s)
+            </strong>
+            <p> The result below will show if the result is not successful, this will be as result of an invalid
+                value of at least one of the parameters.</p>
+        </div>
+        <app-section-four [code]="code" [response]="response"></app-section-four>
+
     </div>
-   
 </div>
-    
-
-

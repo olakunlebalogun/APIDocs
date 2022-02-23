@@ -1,64 +1,60 @@
-<div class="row">
-    <div class="col-md-9 col-sm-12">
-        <main class="main">
-            <div class="main__content">
-                <header>
+<div class="container mt-3">
 
-                    <h1>Payment Installment</h1>
-                    <p>This endpoint helps to spread payment over a period of time, mainly
-                    </p>
-                    <ul>
-                        <li>One time payment</li>
-                        <li>Two-time payment</li>
-                        <li>Three-time payment</li>
-                    </ul>
-                </header>
-                <div class="body">
-                    <h2>Installment Plan</h2>
+  <div class="main__content">
 
-                      <p>
-                        For a customer to choose the duration of repayment, the following parameters <strong>must</strong> be supplied to the request
-                      </p>
 
-                     <ul>
-                        <li>
-                          Ref: This is a unique number for a particular transaction made by customer.
-                        </li><li>
-                            selectedInstallment:The expected value here is 1,2 or 3. This tells the number of times
-                            a customer is willing to repay.
-                          </li>
+    <h5>Payment Installment</h5>
+    <p>This endpoint helps to spread payment over a period of time, mainly
+    </p>
+    <ul>
+      <li>One time payment</li>
+      <li>Two-time payment</li>
+      <li>Three-time payment</li>
+    </ul>
+    <div class="body">
+      <strong>Installment Plan</strong>
 
-                      </ul>
+      <p>
+        For a customer to choose the duration of repayment, the following parameters <strong>must</strong> be supplied
+        to the request
+      </p>
 
-                      <p>Sample of the Request Body in the terminal:</p>
+      <ul>
+        <li>
+          Ref: This is a unique number for a particular transaction made by customer.
+        </li>
+        <li>
+          selectedInstallment:The expected value here is 1,2 or 3. This tells the number of times
+          a customer is willing to repay.
+        </li>
 
-                      <app-section-three [content]="countOne" [heading]="headOne"></app-section-three>
-                  </div>
-                  <div>
-                    <h2>
-                      Successful Installment
-                    </h2>
+      </ul>
 
-                    <p>
-                      For customer to spread repayment duration, <strong>the parameters listed above must be provided.</strong>.
-                    </p>
-                    <div>
-                      <p>Below is an example of expected response from a successful Installment payment</p>
+      <p>Sample of the Request Body in the terminal:</p>
 
-                    <app-section-four [code]="curlSuc" [response]="resSuc"></app-section-four>
-                    </div>
-
-                    <div>
-                      <p>If any of the request parameter is <strong>not</strong> provided</p>
-
-                      <app-section-four [code]="curlErr" [response] = "resErr" ></app-section-four>
-                    </div>
-
-                  </div>
-            </div>
-        </main>
+      <app-section-three [content]="countOne" [heading]="headOne"></app-section-three>
     </div>
-    <div class="col-md-3">
+    <div class="mt-3">
+      <strong>
+        Successful Installment
+      </strong>
+
+      <p>
+        For customer to spread repayment duration, <strong>the parameters listed above must be provided.</strong>.
+      </p>
+      <div class="mt-3">
+        <p>Below is an example of expected response from a successful Installment payment</p>
+
+        <app-section-four [code]="curlSuc" [response]="resSuc"></app-section-four>
+      </div>
+
+      <div>
+        <p>If any of the request parameter is <strong>not</strong> provided</p>
+
+        <app-section-four [code]="curlErr" [response]="resErr"></app-section-four>
+      </div>
 
     </div>
+  </div>
+
 </div>

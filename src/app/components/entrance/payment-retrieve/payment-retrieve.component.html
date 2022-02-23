@@ -1,54 +1,47 @@
-<div class="row">
-    <div class="col-md-9 col-sm-12">
-        <main class="main">
-            <div class="main__content">
-                <header>
-                    <h1>Retrieve Payment</h1>
-                    <p>This endpoint helps to track or know the customers' payment history</p>
-                </header>
-                <div class="body">
-                    <h2>Retrieving payments</h2>
-                   
-                      <p>
-                        To retrieve customer's payments, the customer's reference number <strong>must</strong> be supplied.
-                      </p>
-  
-                     <ul>
-                        <li>
-                          Reference Number : this number is unique to every transaction made by a particular customer.
-                        </li>
-                      </ul>
-  
-                      <p>Sample of the Request Body in the terminal:</p>
-  
-                      <app-section-three [content]="countOne" [heading]="headOne"></app-section-three>
-                  </div>
-  
-                  <div>
-                    <h2>
-                      Successful payment retrieval
-                    </h2>
-  
-                    <p>
-                      To successfully retrieve payment, <strong>the parameter stated above must be provided</strong>.
-                    </p>
-                    <div>
-                      <p>Below shows an example of expected response for a successful payment retrieval</p>
-  
-                    <app-section-four [code]="curlSuc" [response]="resSuc"></app-section-four>
-                    </div>
-  
-                    <div>
-                      <p>If the reference number provided is <b>NOT</b> valid or incorrect</p>
-                     
-                      <app-section-four [code]="curlErr" [response] = "curlErr" ></app-section-four>
-                    </div>
-  
-                  </div>
-            </div>
-        </main>
+<div class="container mt-3">
+
+  <div class="main__content">
+    <h5>Retrieve Payment</h5>
+    <p>This endpoint helps to track or know the customers' payment history</p>
+    <div class="body">
+      <strong>Retrieving payments</strong>
+
+      <p>
+        To retrieve customer's payments, the customer's reference number <strong>must</strong> be supplied.
+      </p>
+
+      <ul>
+        <li>
+          Reference Number : this number is unique to every transaction made by a particular customer.
+        </li>
+      </ul>
+
+      <p>Sample of the Request Body in the terminal:</p>
+
+      <app-section-three [content]="countOne" [heading]="headOne"></app-section-three>
     </div>
-    <div class="col-md-3">
+
+    <div class="mt-3">
+      <strong>
+        Successful payment retrieval
+      </strong>
+
+      <p>
+        To successfully retrieve payment, <strong>the parameter stated above must be provided</strong>.
+      </p>
+      <div>
+        <p>Below shows an example of expected response for a successful payment retrieval</p>
+
+        <app-section-four [code]="curlSuc" [response]="resSuc"></app-section-four>
+      </div>
+
+      <div>
+        <p>If the reference number provided is <b>NOT</b> valid or incorrect</p>
+
+        <app-section-four [code]="curlErr" [response]="curlErr"></app-section-four>
+      </div>
 
     </div>
+  </div>
+
 </div>

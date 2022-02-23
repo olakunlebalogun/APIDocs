@@ -14,10 +14,11 @@
     margin-bottom: 4px;
     ::ng-deep {
         .mat-list-item-content {
-            border-radius: 5px;
-            margin: 0 8px;
+            border-radius: 10px;
+            box-shadow: none;
             &:hover {
-                background: #2c3344 !important;
+                background: #fafafa !important;
+                color: #000;
             }
         }
     }
@@ -27,9 +28,10 @@
     color: #f2f5f7 !important;
     ::ng-deep {
         .mat-list-item-content {
-            background: #2c3344 !important;
+            background: #895efb !important;
             &:hover {
-                background: #2c3344 !important;
+                background: #895efb !important;
+                color: #fff;
             }
         }
     } 

@@ -1,36 +1,24 @@
-<div class="row">
-    <div class="col-md-9 col-sm-12">
-        <main class="main">
-            <div class="main__content">
-                <header>
-                    <h1>Add Transaction Pin</h1>
-                    <p>Add transaction pin API enable merchant to add desired transaction pin of their choice for the completion of various financial transactions from our
-                        platform to bank.
-                    </p>
+<div class="container mt-3">
 
+    <div class="main__content">
+        <h5>Add Transaction Pin</h5>
+        <p>Add transaction pin API enable merchant to add desired transaction pin of their choice for the completion
+            of various financial transactions from our
+            platform to bank.
+        </p>
 
-                </header>
+        <strong>Upload of Utility Bill and Means of Identification</strong>
+        <p>Merchant need to entered registered email, name and newpin.</p>
 
-                <h1>Upload of Utility Bill and Means of Identification</h1>
-                <p>Merchant need to entered registered email, name and newpin.</p>
-
-                <app-section-four [code]="code" [response]="response"></app-section-four>
-                <div>
-                    <br>
-                    <h1>
-                        Invalid Parameter(s)
-                    </h1>
-                    <p> The result below will show if the result is not successful, this will be as result of an invalid
-                        value of at least one of the parameters.</p>
-                </div>
-                <app-section-four [code]="code" [response]="response"></app-section-four>
-
-                <ul></ul>
-
-            </div>
-        </main>
+        <app-section-four [code]="code" [response]="response"></app-section-four>
+        <div>
+            <strong>
+                Invalid Parameter(s)
+            </strong>
+            <p> The result below will show if the result is not successful, this will be as result of an invalid
+                value of at least one of the parameters.</p>
+        </div>
+        <app-section-four [code]="code" [response]="response"></app-section-four>
     </div>
-    <div class="col-md-3">
 
-    </div>
 </div>
