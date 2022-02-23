@@ -3,11 +3,41 @@
         <main class="main">
             <div class="main__content">
                 <header>
-                    <h1>SwipeTech Documentation</h1>
-                    <p>Welcome to the SwipeTech Developer Documentation where you’ll learn how to build amazing payment
-                        experiences with
-                        the SwipeTech API.</p>
+                    <h1>Preview</h1>
+                    <p>This is the endpoint responsible for merchant photo preview</p>
                 </header>
+                <div class="body">
+                  <h2>Photo Preview</h2>
+                    <p>
+                      To be able to preview a photo, the parameter below <strong>must</strong> be supplied to the request.
+                    </p>
+
+                   <ul>
+                     <li>photo : This is a graphical information of the merchant. This(photo) is particular to every merchant</li> 
+                    </ul>
+
+                    <p>Sample of the Request Body in the terminal:</p>
+
+                    <app-section-three [content]="cont" [heading]="head"></app-section-three>
+                </div>
+
+                <div>
+                  <h2>
+                    Successful photo preview
+                  </h2>
+                  <div>
+                    <p>Below shows an example of a successful photo preview </p>
+
+                  <app-section-four [code]="curlSuccess" [response]="responseSuccess"></app-section-four>
+                  </div>
+
+                  <div>
+                    <p>If the parameter provided does<b>NOT</b> exist, the response below will be displayed</p>
+                   
+                    <app-section-four [code]="curlError" [response] = "responseError" ></app-section-four>
+                  </div>
+
+                </div>
             </div>
         </main>
     </div>
@@ -15,3 +45,4 @@
 
     </div>
 </div>
+

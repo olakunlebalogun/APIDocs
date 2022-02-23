@@ -3,11 +3,43 @@
         <main class="main">
             <div class="main__content">
                 <header>
-                    <h1>SwipeTech Documentation</h1>
-                    <p>Welcome to the SwipeTech Developer Documentation where you’ll learn how to build amazing payment
-                        experiences with
-                        the SwipeTech API.</p>
+                    <h1>Reset</h1>
+                    <p>This is the endpoint responsible for resetting of password</p>
                 </header>
+                <div class="body">
+                  <h2>Passsword Reset</h2>
+                    <p>
+                      For a users to be able to reset their password, the parameters below <strong>must</strong> be supplied to the request.
+                    </p>
+
+                   <ul>
+                     <li>email:This is the mail address of the merchant, where information concerning every transaction will be sent to.
+                     </li> 
+                     <li>Password: This is a unique and confidential information about the merchant</li>
+                    </ul>
+
+                    <p>Sample of the Request Body in the terminal:</p>
+
+                    <app-section-three [content]="cont" [heading]="head"></app-section-three>
+                </div>
+
+                <div>
+                  <h2>
+                    Successfully changed password
+                  </h2>
+                  <div>
+                    <p>Below shows an example of a successful password change </p>
+
+                  <app-section-four [code]="curlSuccess" [response]="responseSuccess"></app-section-four>
+                  </div>
+
+                  <div>
+                    <p>If the parameters provided are<b> NOT</b> correct, the response below is likely to be seen.</p>
+                   
+                    <app-section-four [code]="curlError" [response] = "responseError" ></app-section-four>
+                  </div>
+
+                </div>
             </div>
         </main>
     </div>
@@ -15,3 +47,5 @@
 
     </div>
 </div>
+
+
