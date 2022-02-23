@@ -59,7 +59,7 @@
 }
 
 .terminal::before {
-  content: "\00BB \00BB";
+  content: "\00BB";
   position: sticky;
   display: block;
   z-index: 10;

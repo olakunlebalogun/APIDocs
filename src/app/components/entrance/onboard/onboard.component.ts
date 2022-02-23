@@ -52,6 +52,12 @@ export class OnboardComponent implements OnInit {
 }`;
   headOne: string = 'Sign Up Request';
 
+  mrJohn: string = `
+  {
+  "email": "string"
+}
+  `;
+
   constructor() {}
 
   ngOnInit(): void {}

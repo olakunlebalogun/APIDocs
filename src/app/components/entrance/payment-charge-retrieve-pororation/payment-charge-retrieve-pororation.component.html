@@ -3,11 +3,46 @@
         <main class="main">
             <div class="main__content">
                 <header>
-                    <h1>SwipeTech Documentation</h1>
-                    <p>Welcome to the SwipeTech Developer Documentation where you’ll learn how to build amazing payment
-                        experiences with
-                        the SwipeTech API.</p>
+                    <h1>Transaction Proration</h1>
+                    <p>This is the endpoint that divides the amount to be paid back based on the number of month the user selects as to when to pay back. </p>
                 </header>
+                <div>
+                  <p>This endpoint has two request parameters, </p>
+                  <ul>
+                    <li>
+                      Amount : The amount to be borrow
+                    </li>
+                    <li>
+                      Period : The number of month(s) the user which to return, with the maximum of three(3)
+                    </li>
+                  </ul>
+
+                  <p>Below shows an example of the request parameter in the terminal:</p>
+                  <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+                </div>
+
+                <div>
+                  <p>
+                    For Instance if the amount borrowed was # 1000 and the month selected was one, the below shows response of the request.
+                  </p>
+
+                  <app-section-four [code]="codeOne" [response]="resOne"></app-section-four>
+                </div>
+
+
+                <p>
+                  If the month selected was 2, the response will be shown as seen below.
+
+                </p>
+                  <app-section-four [code]="codeTwo" [response]="resTwo"></app-section-four>
+
+
+                  <p>
+                    Finally, if the month selected was 3, the response will be shown below
+                  </p>
+
+                  <app-section-four [code]="codeThree" [response]="resThree"></app-section-four>
+
             </div>
         </main>
     </div>

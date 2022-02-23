@@ -3,11 +3,42 @@
         <main class="main">
             <div class="main__content">
                 <header>
-                    <h1>SwipeTech Documentation</h1>
-                    <p>Welcome to the SwipeTech Developer Documentation where you’ll learn how to build amazing payment
-                        experiences with
-                        the SwipeTech API.</p>
+                    <h1>Payment Charge Retrieval</h1>
+                    <p>This is the endpoint responsible for calculating the charges associated with the transaction amount.</p>
                 </header>
+
+                <div>
+                  <h2>
+                    Calculating The Charges
+                  </h2>
+                  <p>
+                  The endpoint takes only two parameters, namely :
+                </p>
+                  <ul>
+                    <li>
+                      The transaction amount : this is the amount the merchant is willing to borrow.
+                    </li>
+                    <li>
+                      Period: The maximum number of month(s) the said amount will be paid back.
+                    </li>
+                  </ul>
+
+                  <p>
+                    For instance, if the amount is <b>#1000</b>, and the <strong>charges</strong> will be 15% of the amount. Therefore, the <strong>total amount</strong> to be paid back will be <b>#1150</b>
+                    <br>
+                      i.e <b>115%</b>.
+                  </p>
+
+                  <p>Below shows an example of the request parameter in the terminal:</p>
+                  <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+                </div>
+
+                <div>
+                  <p>For a successful request, the response will be as shown below, including the curl</p>
+                  <app-section-four [response]="resOne" [code]="codeOne"></app-section-four>
+                </div>
+
+
             </div>
         </main>
     </div>

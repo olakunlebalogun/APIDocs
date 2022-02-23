@@ -20,4 +20,11 @@ export class UpdateAuthenticationPasswordComponent implements OnInit {
   "error_description": null,
   "meta": {}
 }`;
+
+  headOne: string = `Update Password`;
+  contOne: string = `{
+  "email": "chisomije92@gmail.com",
+  "newpassword": "44444",
+  "tokens": "ar538dg780"
+}`;
 }

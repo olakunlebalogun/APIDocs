@@ -2,7 +2,6 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { DefaultComponent } from './components/default/default.component';
 import { IndexComponent } from './components/Pages/index/index.component';
 import { SectionOneComponent } from './components/Pages/section-one/section-one.component';
 import { SectionTwoComponent } from './components/Pages/section-two/section-two.component';
@@ -22,10 +21,10 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import {MatCardModule} from '@angular/material/card';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FormsModule } from '@angular/forms';
 
 import { EntranceComponent } from './components/entrance/entrance.component';
@@ -90,7 +89,6 @@ import { DashboardOneComponent } from './components/merchant/dashboard-one/dashb
 @NgModule({
   declarations: [
     AppComponent,
-    DefaultComponent,
     IndexComponent,
     DashboardOneComponent,
     SectionOneComponent,

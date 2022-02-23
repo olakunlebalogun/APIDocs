@@ -3,11 +3,28 @@
         <main class="main">
             <div class="main__content">
                 <header>
-                    <h1>SwipeTech Documentation</h1>
-                    <p>Welcome to the SwipeTech Developer Documentation where you’ll learn how to build amazing payment
-                        experiences with
-                        the SwipeTech API.</p>
+                    <h1>Payment Link</h1>
+                    <p>This endpoint is responsible for sending the payment link to the user</p>
                 </header>
+
+                <div>
+                  <p>For the payment to be completed, a link will be sent that re-directs the user to the payment page.</p>
+                  <p>This endpoint receives one parameter as a request, which is the merchant ID</p>
+                  <p>The JSON representation is shown in the terminal below:</p>
+                  <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+                </div>
+
+                <div>
+                  <p>If the correct merchant ID was supplied, the response will be shown this way</p>
+                  <app-section-four [code]="codeOne" [response]="resOne"></app-section-four>
+                </div>
+
+                <div>
+                  <p>
+                    If the incorrect merchant ID was supplied or the merchant has not yet registered with Swipe, the response will be shown this way
+                  </p>
+                  <app-section-four [code]="codeTwo" [response]="resTwo"></app-section-four>
+                </div>
             </div>
         </main>
     </div>

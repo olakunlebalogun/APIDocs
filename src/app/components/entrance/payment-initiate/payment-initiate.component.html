@@ -21,7 +21,7 @@
                       Description : A brief description of the transaction to be made.
                     </li>
                     <li>
-                      Merchant ID : The id given to the merchant when the account was being setup.
+                      Merchant ID : The ID given to the merchant when the account was being setup.
                     </li>
                     <li>
                       Transaction Pin: This is the pin that will be sent to the merchant email or contact-mobile.
@@ -34,6 +34,19 @@
                   <p>This is the sample of the request parameter in the terminal</p>
 
                     <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+                </div>
+
+                <div>
+                  <h2>Valid Parameters</h2>
+                  <p>For a successful request i.e all the parameter supplied are valid, the response will be as shown below:</p>
+
+                  <app-section-four [code]="codeOne" [response]="resOne"></app-section-four>
+                </div>
+
+                <div>
+                  <h2>Invalid Parameter(s)</h2>
+                  <p>If the supplied request turns out to be invalid, the response say for instance an incorrect merchant ID.</p>
+                  <app-section-four [code]="codeTwo" [response]="resTwo"></app-section-four>
                 </div>
             </div>
         </main>
