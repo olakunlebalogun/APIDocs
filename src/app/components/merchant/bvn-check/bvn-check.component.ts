@@ -17,6 +17,11 @@ export class BvnCheckComponent implements OnInit {
     "error_description": null,
     "meta": {}
   }`
+  headOne: string = `Update Password`;
+  contOne: string = `{
+      "accountid": 0,
+      "auth": "string"
+}`;
   // responseDetailsFailed : string =`{
   //   "message": "Failed",
   //   "code": "404",
