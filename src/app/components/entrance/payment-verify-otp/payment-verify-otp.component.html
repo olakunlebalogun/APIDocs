@@ -3,11 +3,59 @@
         <main class="main">
             <div class="main__content">
                 <header>
-                    <h1>SwipeTech Documentation</h1>
-                    <p>Welcome to the SwipeTech Developer Documentation where you’ll learn how to build amazing payment
-                        experiences with
-                        the SwipeTech API.</p>
+                    <h1>Payment Verify OTP</h1>
+                    <p>One-time password (OTP) is a systems that provide for customers to logging on to a network or service using a unique password that can only be used once, as the name suggests.</p>
                 </header>
+
+                <div class="body">
+                    <h2>Verification of OTP</h2>
+
+                    <p>
+                        To access One-time payment (OTP)
+                        <code><a href="https://swipe.ng:7000/swipepay/entrance/onboard">here</a></code>.
+                    </p>
+                    <p>
+                        To be able to access the OTP, the following parameters <strong>must</strong> be supplied to the request
+                    </p>
+                    <ul>
+                        <li>
+                            Body:
+                        </li>
+                        <li>
+                            Status code:
+                        </li>
+                        <li>
+                            Status code value:
+                        </li>
+                    </ul>
+                    <p>To initiate the OTP, you will need to provide your body, status code and status code value:</p>
+
+                    <app-section-three [content]="One"></app-section-three>
+                </div>
+
+                <div>
+                    <h2>
+                        Successful One-time payment (OTP)
+                    </h2>
+
+                    <p>
+                        For a successful OTP, <strong>the parameters listed above must be provided and the
+                            merchant must be registering
+                            for the first time</strong>.
+                    </p>
+
+                    <div>
+                        <p>Below shows an example of a successful OTP by <strong>Smith Rowe</strong></p>
+
+                        <app-section-four [code]="curlOne" [response]="resOne"></app-section-four>
+                    </div>
+
+                    <div>
+                        <p>If any of the request parameter is not provided, or the id is <b>NOT</b> set to zero, or the merchant has once registered with the same email.</p>
+                        <p>This case in point the id is not set to zero.</p>
+                        <app-section-four [code]="curlTwo" [response]="resTwo"></app-section-four>
+                    </div>
+                </div>
             </div>
         </main>
     </div>
