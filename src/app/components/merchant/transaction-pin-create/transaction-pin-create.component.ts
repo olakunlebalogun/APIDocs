@@ -14,6 +14,12 @@ export class TransactionPinCreateComponent implements OnInit {
       "error_description": null,
       "meta": {}
   }`
+  headOne: string = `Update Password`;
+  contOne: string = `{
+      "email": "us@ourmail.com",
+      "name": "segun",
+      "newpin": "12345"
+}`;
   code: string = `
   curl -X POST "https://swipe.ng:7000/swipepay/merchant/transactionpin/create" -H "accept: */*" -H
    "Content-Type: application/json" -d "{ \"accountid\": 0, \"answer\": \"string\", \"pin\": \"string\",

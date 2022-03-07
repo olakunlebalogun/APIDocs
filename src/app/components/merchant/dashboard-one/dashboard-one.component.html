@@ -1,5 +1,56 @@
-
 <div class="row">
+    <div class="col-md-9 col-sm-12">
+        <main class="main">
+            <div class="main__content">
+                <header>
+                    <h1>Dashboard Data</h1>
+                    <p>
+                        This API allows merchant to view their dashboard. 
+                    </p>
+                </header>
+
+                <h1>
+                    View Dashboard
+                </h1>
+                <p>You will need to send a POST request to dashboardData endpoint with the following parameters</p>
+
+
+                <ul>
+                  <li>merchantid</li>
+        
+                </ul>
+
+                <p>The JSON representation is shown below</p>
+
+                <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+                <h2>Valid Parameters</h2>
+                <p>To view dashboard you will need to provide your merchantid.</p>
+
+                <app-section-four [code]="code" [response]="response">
+
+                </app-section-four>
+                <div>
+                   <h1>
+                    Invalid Parameter(s)
+                  </h1>
+                 <p> The result below will show if the result is not successful, this will be as result of an invalid value.</p>
+                </div>
+                <app-section-four [code]="code" [response]="response"></app-section-four>
+
+                <ul></ul>
+
+            </div>
+        </main>
+    </div>
+    <div class="col-md-3">
+
+    </div>
+</div>
+
+
+
+
+<!-- <div class="row">
     <div class="col-md-9 col-sm-12">
         <main class="main">
             <div class="main__content">
@@ -13,20 +64,15 @@
                 <app-section-four [code]="code" [response]="response"></app-section-four>
             <div>
                 <br>
-                <!-- <h1>
-                    Invalid Parameter(s)
-                </h1>
-                <p> The result below will show if the result is not successful, this will be as result of an invalid
-                    value of at least one of the parameters.</p> -->
+               
             </div>
-            <!-- <app-section-three [content]="content1" [heading]="heading" [response]="responseFailed"
-                [responseDetails]="responseDetailsFailed"></app-section-three> -->
+           
             </div>
     
         </main>
     </div>
    
-</div>
+</div> -->
     
 
 

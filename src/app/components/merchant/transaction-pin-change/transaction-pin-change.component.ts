@@ -15,7 +15,14 @@ export class TransactionPinChangeComponent implements OnInit {
       "error_description": null,
       "meta": {}
   }`
+  headOne: string = `Update Password`;
+  contOne: string = `{
+  
+      "accountid": 33776 ,
+      "newpin": "12345",
+      "secretanswer": "Lagos"
  
+}`;
   code: string = `
   curl -X POST "https://swipe.ng:7000/swipepay/merchant/transaction-pin/change" -H "accept: */*" -H 
   "Content-Type: application/json" -d "{ \"accountid\": 0, \"newpin\": \"string\", \"secretanswer\": \"string\"}"`;

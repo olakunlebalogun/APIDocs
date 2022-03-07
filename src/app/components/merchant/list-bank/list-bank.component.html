@@ -1,5 +1,56 @@
-
 <div class="row">
+    <div class="col-md-9 col-sm-12">
+        <main class="main">
+            <div class="main__content">
+                <header>
+                    <h1>List Banks</h1>
+                    <p>
+                        This API shows all available bank a merchant can add. 
+                    </p>
+                </header>
+
+                <h1>
+                    List of Available Banks
+                </h1>
+                <p>You will need to send a GET request to listBanks endpoint with the following parameters</p>
+
+                <!-- <ul>
+                  <li>accountid</li>
+                
+                </ul> -->
+
+                <p>THe JSON representation is shown below</p>
+
+                <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+                <h2>Valid Parameters</h2>
+                <p>To listBanks, you will need to provide your accountid.</p>
+
+                <app-section-four [code]="code" [response]="response">
+
+                </app-section-four>
+                <div>
+                   <h1>
+                    Invalid Parameter(s)
+                  </h1>
+                 <p> The result below will show if the result is not successful, this will be as result of an invalid value of at least one of the parameters.</p>
+                </div>
+                <app-section-four [code]="code" [response]="response"></app-section-four>
+
+                <ul></ul>
+
+            </div>
+        </main>
+    </div>
+    <div class="col-md-3">
+
+    </div>
+</div>
+
+
+
+
+
+<!-- <div class="row">
     <div class="col-md-9 col-sm-12">
         <main class="main">
             <div class="main__content">
@@ -26,7 +77,7 @@
         </main>
     </div>
    
-</div>
+</div> -->
     
 
 

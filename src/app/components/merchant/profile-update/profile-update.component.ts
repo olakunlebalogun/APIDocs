@@ -15,8 +15,18 @@ export class ProfileUpdateComponent implements OnInit {
       "error_description": null,
       "meta": {}
   }`
+  headOne: string = `Update Password`;
+  contOne: string = `{
+      "accountid": 33776 ,
+      "contactaddress": "Lagelu Estate Ibadan",
+      "contactmobile": "08076666211",
+      "gender": "Male",
+      "lga": "Ido",
+      "name": "Adebisi Diamond Abba",
+      "stateorigin": "Lagos"
+}`;
   code: string = `
-  curl -X GET "https://swipe.ng:7000/swipepay/merchant/bank/list" -H "accept: */*"`;
+  curl -X POST "https://swipe.ng:7000/swipepay/merchant/profile/update" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"accountid\": 33776 , \"contactaddress\": \"Lagelu Estate Ibadan\", \"contactmobile\": \"08076666211\", \"gender\": \"Male\", \"lga\": \"Ido\", \"name\": \"Adebisi Diamond Abba\", \"stateorigin\": \"Lagos\"}"`;
  
 
   constructor() { }

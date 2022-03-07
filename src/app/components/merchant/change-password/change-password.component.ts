@@ -14,6 +14,13 @@ export class ChangePasswordComponent implements OnInit {
     "error_description": null,
     "meta": {}
   }`
+  headOne: string = `Update Password`;
+  contOne: string = `{
+      "accountid": 33776,
+      "newpassword": "12345",
+      "oldpassword": "12345",
+      "pin": "12345"
+}`;
  
   code: string = `
   curl -X POST "https://swipe.ng:7000/swipepay/merchant/change-password" -H "accept: */*" -H
