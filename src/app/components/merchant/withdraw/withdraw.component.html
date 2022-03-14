@@ -3,6 +3,59 @@
         <main class="main">
             <div class="main__content">
                 <header>
+                    <h1>Withdrawal of Fund</h1>
+                    <p>This endpoint allows merchant to initiate fund withdrawal.</p>
+                </header>
+
+                <h1>
+                    Merchant WithdrawFund
+                </h1>
+                <p>You will need to send  a POST request to withdrawFund endpoint with the following parameters</p>
+
+
+                <ul>
+                    <li>Accountid</li>
+                    <li>Accountname</li>
+                    <li>Accountnumber</li>
+                    <li>amount</li>
+                    <li>auth</li>
+                    <li>bankcode</li>
+                    <li>bankname</li>
+                    <li>mac</li>
+  
+                  </ul>
+
+                <p>THe JSON representation is shown below</p>
+
+                <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+                <h2>Valid Parameters</h2>
+                <p>To initiate fund withdrawal you will need to provide your accountid, accountname, accountnumber, amount, auth, bankode, bankname and mac</p>
+
+                <app-section-four [code]="code" [response]="response"></app-section-four>
+                <div>
+                   <h1>
+                    Invalid Parameter(s)
+                  </h1>
+                 <p> The result below will show if the result is not successful, this will be as result of an invalid value of at least one of the parameters.</p>
+                </div>
+                <app-section-four [code]="code" [response]="response"></app-section-four>
+
+                <ul></ul>
+
+            </div>
+        </main>
+    </div>
+    <div class="col-md-3">
+
+    </div>
+</div>
+
+
+<!-- <div class="row">
+    <div class="col-md-9 col-sm-12">
+        <main class="main">
+            <div class="main__content">
+                <header>
                     <h1>  WithdrawFund</h1>
                     <p>This API allows merchant to initiate Withdrawal of fund.</p>
                 </header>
@@ -31,4 +84,4 @@
     <div class="col-md-3">
 
     </div>
-</div>
+</div> -->

@@ -19,6 +19,11 @@ export class WithdrawComponent implements OnInit {
   curl -X POST "https://swipe.ng:7000/swipepay/merchant/transactionpin/create" -H "accept: */*" -H
    "Content-Type: application/json" -d "{ \"accountid\": 0, \"answer\": \"string\", \"pin\": \"string\",
     \"question\": \"string\"}"`;
+    headOne: string = `Update Password`;
+    contOne: string = `{
+      "accountid": 33776,
+      "pin": "12345"
+  }`;
 
   constructor() { }
 

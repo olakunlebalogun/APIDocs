@@ -1,34 +1,53 @@
-
 <div class="row">
     <div class="col-md-9 col-sm-12">
         <main class="main">
             <div class="main__content">
                 <header>
-                    <h1>Resetting Transaction Pin</h1>
-                    
-                    <p>This API allows merchant to Reset their transaction Pin.</p>
-                    <p>This API allows merchant to enter their secretquestion, secretanswer and transaction pin.</p>
-
-
-                    
+                    <h1>Update Transaction Pin</h1>
+                    <p>This is the endpoint responsible for resetting merchant transaction pin.</p>
                 </header>
-                <app-section-four [code]="code" [response]="response"></app-section-four>
-            <div>
-                <br>
+
                 <h1>
-                    Invalid Parameter(s)
+                    Merchant Update transaction pin
                 </h1>
-                <p> The result below will show if the result is not successful, this will be as result of an invalid
-                    value of at least one of the parameters.</p>
+                <p>You will need to send  a POST request to pingPin endpoint with the following parameters</p>
+
+
+                <ul>
+                    <li>Accountid</li>
+                    <li>Answer to secretquestion</li>
+                    <li>Pin</li>
+                    <li>Question</li>
+  
+                  </ul>
+
+                <p>THe JSON representation is shown below</p>
+
+                <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+                <h2>Valid Parameters</h2>
+                <p>To initiate add transaction pin, you will need to provide your email, name, and your newpin</p>
+
+                <app-section-four [code]="code" [response]="response"></app-section-four>
+                <div>
+                   <h1>
+                    Invalid Parameter(s)
+                  </h1>
+                 <p> The result below will show if the result is not successful, this will be as result of an invalid value of at least one of the parameters.</p>
+                </div>
+                <app-section-four [code]="code" [response]="response"></app-section-four>
+
+                <ul></ul>
+
             </div>
-            <app-section-four [code]="code" [response]="response"></app-section-four>
-                
-            </div>
-    
         </main>
     </div>
-   
+    <div class="col-md-3">
+
+    </div>
 </div>
-    
+
+
+
+
 
 

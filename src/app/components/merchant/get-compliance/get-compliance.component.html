@@ -4,6 +4,45 @@
             <div class="main__content">
                 <header>
                     <h1>Get Compliance</h1>
+                    <p>This endpoint allows merchant to view all compliance document uploaded.</p>
+                </header>
+
+                <div>
+                  <!-- <p>For the payment to be completed, a link will be sent that re-directs the user to the payment page.</p> -->
+                  <p>This endpoint receives one parameter as a request, which is the merchant ID</p>
+                  <p>The JSON representation is shown in the terminal below:</p>
+                  <app-section-three [content]="contOne" [heading]="headOne"></app-section-three>
+                </div>
+
+                <div>
+                  <p>If the correct merchant ID was supplied, the response will be shown this way</p>
+                  <app-section-four [code]="code" [response]="response"></app-section-four>
+                </div>
+
+                <div>
+                  <p>
+                    If the incorrect merchant ID was supplied or the merchant has not yet upload compliance document with Swipe, the response will be shown this way
+                  </p>
+                  <app-section-four [code]="codeTwo" [response]="resTwo"></app-section-four>
+                </div>
+            </div>
+        </main>
+    </div>
+    <div class="col-md-3">
+
+    </div>
+</div>
+
+
+
+
+
+<!-- <div class="row">
+    <div class="col-md-9 col-sm-12">
+        <main class="main">
+            <div class="main__content">
+                <header>
+                    <h1>Get Compliance</h1>
                     
                     <p>This API allows a merchant to view all compliance document uploaded.
                 
@@ -18,4 +57,4 @@
 </div>
     
 
-
+ -->
